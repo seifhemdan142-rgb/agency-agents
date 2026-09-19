@@ -25,6 +25,7 @@
 #   zcode        -- Copy agents to ~/.zcode/agents/ (global) or .zcode/agents/ (project)
 #   codex        -- Copy custom agent TOML files to ~/.codex/agents/
 #   osaurus      -- Copy skills to ~/.osaurus/skills/
+#   ollama       -- Copy Modelfiles to ~/.ollama/agency-agents/
 #   hermes       -- Copy lazy-router plugin to ~/.hermes/plugins/ and enable it
 #   vibe         -- Copy agents and prompts to ~/.vibe/agents/ and ~/.vibe/prompts/
 #   all          -- Install for all detected tools (default)
@@ -51,7 +52,7 @@
 #
 # Env: CLAUDE_CONFIG_DIR, COPILOT_AGENT_DIR, CURSOR_RULES_DIR, GEMINI_AGENTS_DIR,
 #      OPENCODE_AGENTS_DIR, OPENCLAW_DIR, QWEN_AGENTS_DIR, CODEX_AGENTS_DIR,
-#      OSAURUS_SKILLS_DIR, HERMES_HOME, HERMES_PLUGIN_DIR, VIBE_HOME
+#      OSAURUS_SKILLS_DIR, OLLAMA_AGENTS_DIR, HERMES_HOME, HERMES_PLUGIN_DIR, VIBE_HOME
 #      override default install paths (checked before hardcoded defaults).
 #
 # --- USAGE-END ---  (sentinel for usage(); do not remove)
@@ -130,7 +131,7 @@ INTEGRATIONS="$REPO_ROOT/integrations"
 # shellcheck source=lib.sh
 . "$SCRIPT_DIR/lib.sh"
 
-ALL_TOOLS=(claude-code copilot antigravity gemini-cli opencode openclaw cursor aider windsurf qwen zcode kimi codex osaurus hermes vibe)
+ALL_TOOLS=(claude-code copilot antigravity gemini-cli opencode openclaw cursor aider windsurf qwen zcode kimi codex osaurus ollama hermes vibe)
 
 # The division set is derived from divisions.json (the single source of truth)
 # so the installer can never drift from the catalog — a hardcoded copy silently
@@ -311,6 +312,7 @@ resolve_dest() {
     zcode)       var="ZCODE_AGENTS_DIR" ;;
     codex)       var="CODEX_AGENTS_DIR" ;;
     osaurus)     var="OSAURUS_SKILLS_DIR" ;;
+    ollama)      var="OLLAMA_AGENTS_DIR" ;;
     hermes)      var="HERMES_PLUGIN_DIR" ;;
     vibe)        var="VIBE_HOME" ;;
   esac
@@ -339,7 +341,7 @@ resolve_tool_path() {
     aider) bin="aider" ;; windsurf) bin="windsurf" ;; qwen) bin="qwen" ;;
     zcode) bin="zcode" ;;
     kimi) bin="kimi" ;; codex) bin="codex" ;; antigravity) bin="" ;;
-    osaurus) bin="osaurus" ;; hermes) bin="hermes" ;; vibe) bin="vibe" ;;
+    osaurus) bin="osaurus" ;; ollama) bin="ollama" ;; hermes) bin="hermes" ;; vibe) bin="vibe" ;;
   esac
   [[ -n "$bin" ]] && command -v "$bin" 2>/dev/null
 }
@@ -442,6 +444,7 @@ detect_zcode()        { command -v zcode >/dev/null 2>&1 || [[ -d "${HOME}/.zcod
 detect_kimi()         { command -v kimi >/dev/null 2>&1; }
 detect_codex()        { command -v codex >/dev/null 2>&1 || [[ -d "${HOME}/.codex" ]]; }
 detect_osaurus()      { command -v osaurus >/dev/null 2>&1 || [[ -d "${HOME}/.osaurus" ]]; }
+detect_ollama()       { command -v ollama >/dev/null 2>&1 || [[ -d "${HOME}/.ollama" ]]; }
 detect_hermes()       { command -v hermes >/dev/null 2>&1 || [[ -d "${HERMES_HOME:-${HOME}/.hermes}" ]]; }
 detect_vibe()         { command -v vibe >/dev/null 2>&1 || [[ -d "${VIBE_HOME:-${HOME}/.vibe}" ]]; }
 
@@ -461,6 +464,7 @@ is_detected() {
     kimi)        detect_kimi        ;;
     codex)       detect_codex       ;;
     osaurus)     detect_osaurus     ;;
+    ollama)      detect_ollama      ;;
     hermes)      detect_hermes      ;;
     vibe)        detect_vibe        ;;
     *)           return 1 ;;
@@ -484,6 +488,7 @@ tool_label() {
     kimi)        printf "%-14s  %s" "Kimi Code"    "(~/.config/kimi/agents)" ;;
     codex)       printf "%-14s  %s" "Codex"        "(~/.codex/agents)"       ;;
     osaurus)     printf "%-14s  %s" "Osaurus"      "(~/.osaurus/skills)"     ;;
+    ollama)      printf "%-14s  %s" "Ollama"       "(~/.ollama/agency-agents)" ;;
     hermes)      printf "%-14s  %s" "Hermes"       "(~/.hermes/plugins)"     ;;
     vibe)        printf "%-14s  %s" "Mistral Vibe" "(~/.vibe/agents)"        ;;
   esac
@@ -609,7 +614,7 @@ tool_simple_name() {
     claude-code) echo "Claude Code";; copilot) echo "Copilot";; antigravity) echo "Antigravity";;
     gemini-cli) echo "Gemini CLI";; opencode) echo "OpenCode";; openclaw) echo "OpenClaw";;
     cursor) echo "Cursor";; aider) echo "Aider";; windsurf) echo "Windsurf";;
-    qwen) echo "Qwen Code";; zcode) echo "ZCode";; kimi) echo "Kimi Code";; codex) echo "Codex";; osaurus) echo "Osaurus";; *) echo "$1";;
+    qwen) echo "Qwen Code";; zcode) echo "ZCode";; kimi) echo "Kimi Code";; codex) echo "Codex";; osaurus) echo "Osaurus";; ollama) echo "Ollama";; *) echo "$1";;
   esac
 }
 
@@ -823,6 +828,26 @@ install_osaurus() {
     incr count
   done < <(find "$src" -mindepth 1 -maxdepth 1 -type d -print0)
   ok "Osaurus: $count skills -> $dest"
+}
+
+install_ollama() {
+  local src="$INTEGRATIONS/ollama"
+  local dest; dest="$(resolve_dest ollama "${HOME}/.ollama/agency-agents")"
+  local count=0
+  [[ -d "$src" ]] || { err "integrations/ollama missing. Run convert.sh first."; return 1; }
+  mkdir -p "$dest"
+  local d
+  while IFS= read -r -d '' d; do
+    local name; name="$(basename "$d")"
+    slug_allowed "$name" || continue
+    [[ -f "$d/Modelfile" ]] || continue
+    mkdir -p "$dest/$name"
+    install_file "$d/Modelfile" "$dest/$name/Modelfile"
+    incr count
+  done < <(find "$src" -mindepth 1 -maxdepth 1 -type d -print0)
+  ok "Ollama: $count Modelfiles -> $dest"
+  dim "        Register one:  ollama create agency-<agent> -f $dest/<agent>/Modelfile"
+  dim "        Then run it:   ollama run agency-<agent>"
 }
 
 install_gemini_cli() {
@@ -1288,6 +1313,7 @@ install_tool() {
     kimi)        install_kimi        ;;
     codex)       install_codex       ;;
     osaurus)     install_osaurus     ;;
+    ollama)      install_ollama      ;;
     hermes)      install_hermes      ;;
     vibe)        install_vibe        ;;
   esac

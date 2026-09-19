@@ -81,6 +81,7 @@ integrations/kimi/*/
 !integrations/kimi/README.md
 integrations/codex/agents/*
 integrations/osaurus/agency-*/
+integrations/ollama/*/
 integrations/hermes/agency-agents-router/
 integrations/vibe/agents/
 integrations/vibe/prompts/

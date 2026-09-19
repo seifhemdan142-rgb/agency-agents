@@ -66,7 +66,7 @@ Each agent file contains:
 
 Browse the agents below and copy/adapt the ones you need!
 
-### Option 4: Use with Other Tools (GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Kimi Code, Codex, Osaurus, Hermes, Mistral Vibe)
+### Option 4: Use with Other Tools (GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Kimi Code, Codex, Osaurus, Ollama, Hermes, Mistral Vibe)
 
 ```bash
 # Step 1 -- generate integration files for all supported tools
@@ -87,6 +87,7 @@ Browse the agents below and copy/adapt the ones you need!
 ./scripts/install.sh --tool kimi
 ./scripts/install.sh --tool codex
 ./scripts/install.sh --tool osaurus
+./scripts/install.sh --tool ollama
 ./scripts/install.sh --tool hermes
 ./scripts/install.sh --tool vibe
 ```
@@ -740,6 +741,7 @@ The Agency works natively with Claude Code, and ships conversion + install scrip
 - **[Kimi Code](https://github.com/MoonshotAI/kimi-cli)** — YAML agent specs → `~/.config/kimi/agents/`
 - **[Codex](https://developers.openai.com/codex/overview)** — TOML custom agents → `~/.codex/agents/`
 - **Osaurus** -- `SKILL.md` skills -> `~/.osaurus/skills/`
+- **[Ollama](https://ollama.com)** -- one `Modelfile` per agent -> `~/.ollama/agency-agents/`
 - **[Hermes](integrations/hermes/README.md)** -- lazy-router plugin -> `~/.hermes/plugins/`
 
 ---
@@ -780,9 +782,10 @@ The installer scans your system for installed tools, shows a checkbox UI, and le
   [ ] 11)  [ ]  Kimi Code       (~/.config/kimi/agents)
   [ ] 12)  [ ]  Codex           (~/.codex/agents)
   [ ] 13)  [ ]  Osaurus         (~/.osaurus/skills)
-  [ ] 14)  [ ]  Hermes          (~/.hermes/plugins)
+  [ ] 14)  [ ]  Ollama          (~/.ollama/agency-agents)
+  [ ] 15)  [ ]  Hermes          (~/.hermes/plugins)
 
-  [1-14] toggle   [a] all   [n] none   [d] detected
+  [1-15] toggle   [a] all   [n] none   [d] detected
   [Enter] install   [q] quit
 ```
 
@@ -794,6 +797,7 @@ The installer scans your system for installed tools, shows a checkbox UI, and le
 ./scripts/install.sh --tool antigravity
 ./scripts/install.sh --tool codex
 ./scripts/install.sh --tool osaurus
+./scripts/install.sh --tool ollama
 ./scripts/install.sh --tool hermes
 ```
 
@@ -1060,7 +1064,7 @@ When you add new agents or edit existing ones, regenerate all integration files:
 
 - [ ] Interactive agent selector web tool
 - [x] Multi-agent workflow examples -- see [examples/](examples/)
-- [x] Multi-tool integration scripts (Claude Code, GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Qwen Code, Kimi Code, Codex, Osaurus, Hermes)
+- [x] Multi-tool integration scripts (Claude Code, GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Qwen Code, Kimi Code, Codex, Osaurus, Ollama, Hermes)
 - [ ] Video tutorials on agent design
 - [ ] Community agent marketplace
 - [ ] Agent "personality quiz" for project matching

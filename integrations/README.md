@@ -19,6 +19,7 @@ supported agentic coding tools.
 - **[Codex](#codex)** — `.toml` custom agents in `codex/`
 - **[Mistral Vibe](vibe/README.md)** — `.toml` agents + prompt files generated in `vibe/`
 - **Osaurus** -- `SKILL.md` skills generated in `osaurus/`
+- **[Ollama](ollama/README.md)** -- one `Modelfile` per agent generated in `ollama/`
 - **[Hermes](hermes/README.md)** -- lazy-router plugin generated in `hermes/`
 
 ## Quick Install
@@ -34,6 +35,7 @@ supported agentic coding tools.
 ./scripts/install.sh --tool claude-code
 ./scripts/install.sh --tool codex
 ./scripts/install.sh --tool osaurus
+./scripts/install.sh --tool ollama
 ./scripts/install.sh --tool hermes
 
 # Gemini CLI needs generated integration files on a fresh clone

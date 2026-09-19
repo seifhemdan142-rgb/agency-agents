@@ -97,7 +97,7 @@ N="$(wc -l < "$SOURCES" | tr -d ' ')"
 [[ "$N" -gt 0 ]] || { echo "ERROR: no source agents found." >&2; exit 2; }
 
 # --- generate: every converted tool, sequentially, into a scratch dir ---------
-TOOLS="antigravity gemini-cli opencode cursor aider windsurf openclaw qwen zcode kimi codex osaurus hermes vibe"
+TOOLS="antigravity gemini-cli opencode cursor aider windsurf openclaw qwen zcode kimi codex osaurus ollama hermes vibe"
 if [[ -z "$OUT" ]]; then
   OUT="$TMP/out"; mkdir -p "$OUT"
   for t in $TOOLS; do
@@ -151,6 +151,7 @@ SPEC = {
     "vibe":        ("agents/*.toml",     "toml-id"),
     "kimi":        ("*/agent.yaml",      "yaml-id"),
     "openclaw":    ("*/SOUL.md",         "plain"),
+    "ollama":      ("*/Modelfile",       "plain"),
     "aider":       ("CONVENTIONS.md",    "accum"),
     "windsurf":    (".windsurfrules",    "accum"),
     "hermes":      ("agency-agents-router/data/agents.json", "json"),
@@ -158,7 +159,7 @@ SPEC = {
 
 def slug_of(path):
     base = os.path.basename(path)
-    if base in ("SKILL.md", "agent.yaml", "SOUL.md", "system.md", "AGENTS.md", "IDENTITY.md"):
+    if base in ("SKILL.md", "agent.yaml", "SOUL.md", "system.md", "AGENTS.md", "IDENTITY.md", "Modelfile"):
         d = os.path.basename(os.path.dirname(path))
         return d[len("agency-"):] if d.startswith("agency-") else d
     return os.path.splitext(base)[0]
