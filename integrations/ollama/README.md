@@ -81,15 +81,17 @@ personas do better on models with a large context window.
 # Expert frontend developer specializing in modern web technologies...
 FROM llama3.1
 
-SYSTEM '''
+SYSTEM """
 # Frontend Developer Agent Personality
 ...
-'''
+"""
 ```
 
-The `SYSTEM` block is fenced with `'''`. The Modelfile grammar has no escape for
-a fence, and many personas embed Python snippets that already use `"""`, so the
-converter picks whichever triple-quote fence the persona does not contain.
+The `SYSTEM` block is fenced with `"""` — the only multiline fence Ollama's
+Modelfile grammar accepts. The grammar has no escape for that fence, and some
+personas embed Python docstrings written with `"""`, which would close the block
+early. The converter rewrites those inner fences to `'''`, which is equivalent
+in Python, so the snippets keep working.
 
 ## Notes
 
