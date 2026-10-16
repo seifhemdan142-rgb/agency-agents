@@ -180,6 +180,8 @@ Building the future, one commit at a time.
 | 📑 [PDF Engine Architect](engineering/engineering-pdf-engine-architect.md) | Deterministic HTML-to-PDF compilation, tagged PDF/UA and PDF/A | Playwright render pools, dynamic page sizing, archival-grade document output |
 | 🎯 [ATS Validator Architect](engineering/engineering-ats-validator-architect.md) | Resume parseability, ATS ingestion pipelines | BM25/TF-IDF relevance scoring, layout linearization audits, EU AI Act and NYC LL144 compliance |
 | 📑 [Universal Document Compiler](engineering/engineering-universal-document-compiler.md) | Schema-agnostic document ASTs, data-shape layout inference, paged publishing | Compiling arbitrary YAML trees into proposals, technical specs, executive dossiers |
+| 📏 [LLM Evaluation Engineer](engineering/engineering-llm-evaluation-engineer.md) | LLM and agent evals, calibrated LLM-as-judge, CI regression gates | Measuring whether a prompt, model, or agent change made quality better or worse |
+| 🚄 [LLM Inference Engineer](engineering/engineering-llm-inference-engineer.md) | Self-hosted LLM serving, KV-cache sizing, batching, quantization, cost per token | Making open-weight models fast and cheap, and deciding self-host vs API |
 
 ### 🎨 Design Division
 
@@ -228,6 +230,7 @@ Turning pipeline into revenue through craft, not CRM busywork.
 | 🏋️ [Sales Coach](sales/sales-coach.md) | Rep development, call coaching, pipeline review facilitation | Making every rep and every deal better through structured coaching |
 | 🎯 [Sales Outreach](specialized/sales-outreach.md) | Cold prospecting, multi-touch cadences, objection handling, proposals | Top-of-funnel B2B outreach — from cold email to booked discovery call |
 | 🧲 [Offer & Lead Gen Strategist](sales/sales-offer-lead-gen-strategist.md) | Offers & lead magnets | Top-of-funnel offer construction and lead gen |
+| 🔁 [RevOps Architect](sales/sales-revops-architect.md) | Funnel definitions, metrics dictionary, lead routing, CRM hygiene, forecast cadence | Aligning marketing, sales, and CS on one revenue engine with numbers everyone trusts |
 
 ### 📢 Marketing Division
 
@@ -332,6 +335,8 @@ Defending the stack — from secure-by-design architecture to breach response.
 | 🛡️ [Blockchain Security Auditor](security/security-blockchain-security-auditor.md) | Smart contract audits, exploit analysis | Finding vulnerabilities in contracts before deployment |
 | 🔎 [AI-Generated Code Security Auditor](security/security-ai-generated-code-auditor.md) | Security review of AI/vibe-coded apps | Hardcoded secrets, broken RLS, prompt-injection sinks |
 | 🔑 [Secrets & Credential Hygiene Engineer](security/security-secrets-credential-engineer.md) | Secrets & credential lifecycle | Detection, vaulting, rotation, leak response |
+| 🪤 [LLM Red Team Specialist](security/security-llm-red-team-specialist.md) | Authorized prompt-injection, excessive-agency, and exfiltration testing of LLM apps and agents | Proving what an attacker can make your AI system do or leak, then fixing it |
+| ⚛️ [Post-Quantum Cryptography Engineer](security/security-post-quantum-cryptography-engineer.md) | Crypto inventory, Mosca prioritization, hybrid ML-KEM rollout, crypto-agility | Planning and running the migration off quantum-vulnerable RSA and ECC |
 
 ### 🛟 Support Division
 
@@ -423,6 +428,8 @@ The unique specialists who don't fit in a box.
 | 🧡 [Aging Parent Care Companion](specialized/healthcare-aging-parent-care-companion.md) | Family caregiver decision-support | Appointment/medication coordination, care-team comms, caregiver wellbeing (HIPAA-aligned) |
 | 🏛️ [Master Plan Architect](specialized/specialized-master-plan-architect.md) | Architectural teaching, red-team plan critique | Deep architecture teaching, risk critique, comprehensive Markdown implementation plans (no code execution) |
 | 🎧 [Focus Music Architect](specialized/specialized-focus-music-architect.md) | Instrumental focus-music prompt engineering, neuroacoustics | Soundscape architecture, BPM curves, binaural layers for generative audio models |
+| 🚦 [AI Governance Officer](specialized/specialized-ai-governance-officer.md) | EU AI Act, ISO/IEC 42001, NIST AI RMF programs, AI inventory, vendor AI review | Using and shipping AI with proportionate, documented controls |
+| 🛃 [Customs & Tariff Specialist](specialized/specialized-customs-tariff-specialist.md) | HS classification, customs value, origin, tariff scenarios, lawful duty mitigation | Managing tariff exposure and landed cost while trade rules keep changing |
 
 ### 💵 Finance Division
 
@@ -435,6 +442,7 @@ Accounting, financial analysis, tax strategy, and investment research specialist
 | 📈 [FP&A Analyst](finance/finance-fpa-analyst.md) | Budgeting, rolling forecasts, variance analysis, business reviews | Annual operating plans, monthly business reviews, strategic resource allocation |
 | 🔍 [Investment Researcher](finance/finance-investment-researcher.md) | Due diligence, portfolio analysis, asset valuation, equity research | Investment thesis development, risk assessment, market research |
 | 🏛️ [Tax Strategist](finance/finance-tax-strategist.md) | Tax optimization, multi-jurisdictional compliance, transfer pricing | Entity structuring, ETR analysis, audit defense, strategic tax planning |
+| 🪙 [Fundraising Strategist](finance/finance-fundraising-strategist.md) | Raise strategy, pitch narrative, investor process, SAFE and cap-table math, term sheets | Raising pre-seed to Series A on clean terms with known dilution |
 
 ### 🎮 Game Development Division
 
