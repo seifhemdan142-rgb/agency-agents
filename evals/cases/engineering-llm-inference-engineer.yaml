@@ -1,0 +1,33 @@
+agent: engineering/engineering-llm-inference-engineer.md
+cases:
+  - id: li-1
+    prompt: |
+      We're serving Llama 3.1 8B in FP16 on a single 80 GB H100 with vLLM. Each request has up to 8k tokens of context. Roughly how many concurrent requests can we fit?
+    checks:
+      - "Computes KV cache per token as about 128 KiB (2 x 32 layers x 8 KV heads x 128 head dim x 2 bytes), i.e. about 1 GiB per full 8k-token sequence."
+      - "Accounts for roughly 16 GB of FP16 weights plus reserved or activation overhead (e.g. vLLM's gpu_memory_utilization around 0.9)."
+      - "Arrives at roughly 45-60 concurrent full-length (8k) requests."
+      - "Notes that real concurrency is higher when requests are shorter than 8k, because paged KV blocks are allocated on demand (or mentions prefix caching)."
+      - "Mentions at least one way to raise capacity (e.g. FP8 KV cache or quantized weights) together with its trade-off."
+    red_flags:
+      - "Ignores grouped-query attention and uses 32 KV heads, giving about 512 KiB per token and roughly 4x too few requests."
+  - id: li-2
+    prompt: |
+      Our p99 time-to-first-token is terrible (8 seconds) on our LLM service even though average latency looks fine. Should we just quantize the model to INT4?
+    checks:
+      - "Explains that tail TTFT is usually driven by queueing and/or prefill contention (long prompts), so INT4 weight quantization may not fix it."
+      - "Recommends decomposing TTFT into queue time versus prefill time and correlating with prompt length and load before changing anything."
+      - "Suggests concrete levers such as chunked prefill, limiting max batched tokens or admission control, prefix caching, more replicas or autoscaling, or prefill/decode disaggregation."
+      - "Notes that INT4 carries a quality cost that must be measured on your own tasks."
+    red_flags:
+      - "Recommends INT4 as the fix without diagnosing the cause of the tail latency."
+  - id: li-3
+    prompt: |
+      Should we self-host an open-weight model or keep paying for an API? We do about 50 million tokens a month.
+    checks:
+      - "Concludes or shows that at roughly 50M tokens per month an API is very likely cheaper than a dedicated always-on GPU (typically on the order of $1,000 or more per month), unless non-cost reasons dominate."
+      - "Lists non-cost reasons that can justify self-hosting, such as data residency or privacy, latency control, customization, or vendor independence."
+      - "Mentions hidden self-hosting costs such as engineering and on-call time, low GPU utilization, scaling, and upgrades."
+      - "Says quality differences between the API model and open-weight alternatives must be evaluated on their own tasks."
+    red_flags:
+      - "Claims self-hosting is clearly cheaper at this volume without accounting for GPU utilization."

@@ -1,0 +1,33 @@
+agent: specialized/specialized-export-controls-sanctions-specialist.md
+cases:
+  - id: ec-1
+    prompt: |
+      A potential customer is owned 30% each by two different people who are on OFAC's SDN list. Neither owns 50% alone. Can we do business with them?
+    checks:
+      - "Applies OFAC's 50 Percent Rule with aggregation: ownership by blocked persons is added together, so 30% + 30% = 60% makes the company blocked."
+      - "Concludes US persons cannot deal with the company, and that any of its property coming into their possession must be blocked and reported."
+      - "Recommends involving sanctions counsel or compliance, documenting the analysis, and notes that an OFAC license would be the only route."
+      - "Notes that control without 50% ownership does not trigger the OFAC rule by itself but warrants caution, and/or that other regimes (EU, UK) also consider control."
+    red_flags:
+      - "Concludes they can do business because no single SDN owns 50% or more."
+  - id: ec-2
+    prompt: |
+      We want to give an engineer on an H-1B visa access to our repository containing export-controlled (EAR) technology. Is that an issue?
+    checks:
+      - "Identifies this as a potential deemed export: releasing controlled technology to a foreign person in the US counts as an export to their country of nationality."
+      - "Explains that whether a license is needed depends on the technology's ECCN and the person's country."
+      - "Mentions the export-control certification in the H-1B petition (Form I-129)."
+      - "Recommends access controls or a technology control plan until classification and licensing are resolved."
+      - "Notes that US citizens, green-card holders, and protected individuals are not foreign persons for deemed-export purposes."
+    red_flags:
+      - "Says visa holders working in the US are exempt from export controls."
+  - id: ec-3
+    prompt: |
+      Do we need an export license to sell our SaaS product that uses standard encryption (TLS) to customers abroad?
+    checks:
+      - "Explains that mass-market software using standard encryption is typically classified 5D992.c and generally needs no license for most destinations."
+      - "Notes that giving remote access to SaaS is generally not an export of the server software, but downloadable clients, apps, and technical data can be."
+      - "Says comprehensively sanctioned destinations and restricted parties remain off-limits regardless of encryption classification, and recommends screening."
+      - "Mentions classification or self-classification steps (e.g. License Exception ENC and any reporting) and confirming with counsel."
+    red_flags:
+      - "Says encryption software can never be exported without a license."

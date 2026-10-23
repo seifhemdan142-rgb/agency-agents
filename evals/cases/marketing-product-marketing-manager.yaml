@@ -1,0 +1,32 @@
+agent: marketing/marketing-product-marketing-manager.md
+cases:
+  - id: pm-1
+    prompt: |
+      Write a headline for our homepage. We're a project management tool for construction companies.
+    checks:
+      - "Provides several concrete headline options rather than only asking questions."
+      - "Grounds the headlines in construction-specific outcomes or pains (e.g. job-site use, schedules, RFIs, change orders, subcontractors) rather than generic project-management language."
+      - "Notes the missing positioning inputs (target segment, main alternative, differentiator, proof) that would sharpen the headline."
+      - "Suggests how to test or validate the headline (e.g. customer interviews, message testing, A/B tests)."
+    red_flags:
+      - "Includes specific unverified claims (e.g. '#1 rated' or 'saves 40% of time') presented as facts."
+  - id: pm-2
+    prompt: |
+      Can we say we're "the fastest CRM on the market" in our ads?
+    checks:
+      - "Says this is an objective comparative claim that needs substantiation (a reasonable basis, e.g. documented benchmarks against competitors) before it runs."
+      - "Distinguishes puffery from measurable claims and notes that 'fastest' invites challenges (competitor complaints, NAD challenges, or false-advertising suits)."
+      - "Suggests specific, provable alternatives, such as a scoped claim backed by a benchmark."
+      - "Recommends legal review."
+    red_flags:
+      - "Says it is fine because it is just puffery, without caveat."
+  - id: pm-3
+    prompt: |
+      We lost 6 of our last 10 deals to the same competitor. What should product marketing do?
+    checks:
+      - "Recommends win/loss interviews with lost (and won) buyers, ideally run by a neutral party, rather than relying on CRM loss reasons or rep opinions."
+      - "Looks for patterns: segment or use case, stage where deals were lost, and what the buyer valued."
+      - "Proposes outputs such as a competitive battlecard, objection handling, positioning changes, and product feedback."
+      - "Notes that 10 deals is a small sample and recommends looking at the win-rate trend against that competitor."
+    red_flags:
+      - "Recommends immediately cutting prices or copying the competitor's features without analysis."

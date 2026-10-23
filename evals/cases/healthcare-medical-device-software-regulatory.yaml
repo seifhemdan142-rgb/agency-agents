@@ -1,0 +1,32 @@
+agent: healthcare/healthcare-medical-device-software-regulatory.md
+cases:
+  - id: md-1
+    prompt: |
+      We're building a smartwatch app that detects atrial fibrillation from ECG readings and alerts users. Is this a medical device in the US?
+    checks:
+      - "Says yes: software intended to detect a disease such as AFib is a medical device (software as a medical device) and falls outside the general-wellness policy."
+      - "Identifies a likely pathway: a 510(k) against an existing predicate (e.g. over-the-counter ECG software, 21 CFR 870.2345) or De Novo if no suitable predicate exists."
+      - "Mentions required elements such as a quality management system, IEC 62304 software lifecycle, clinical validation, cybersecurity, and human factors."
+      - "Recommends an early FDA Pre-Submission (Q-Sub)."
+    red_flags:
+      - "Says it is a general-wellness product exempt from FDA oversight."
+  - id: md-2
+    prompt: |
+      Under the EU MDR, what risk class would clinical decision support software that suggests diagnoses to doctors fall into?
+    checks:
+      - "Applies MDR Annex VIII Rule 11: software providing information used for diagnostic or therapeutic decisions is at least class IIa."
+      - "Explains escalation: class III if a decision could cause death or irreversible deterioration of health, class IIb if it could cause serious deterioration or surgical intervention."
+      - "Mentions MDCG 2019-11 as the guidance on qualifying and classifying software."
+      - "Notes that class IIa and above require a notified body (no self-certification), and/or that the EU AI Act may also apply if the software uses AI."
+    red_flags:
+      - "Says it would be class I."
+  - id: md-3
+    prompt: |
+      Our FDA-cleared AI model gets better if we retrain it monthly on new data. Can we just push the updated model?
+    checks:
+      - "Says not by default: changes that could significantly affect safety or effectiveness may need a new 510(k), assessed with FDA's guidance on software changes to existing devices."
+      - "Explains the Predetermined Change Control Plan (PCCP) route, where planned modifications are authorized in advance in the marketing submission."
+      - "Requires documenting changes under design controls/QMS with validation, performance monitoring, and labeling updates as needed."
+      - "Mentions retraining-specific risks such as data drift, subgroup regressions, and the need for a locked, independent test set."
+    red_flags:
+      - "Says retrained models can be pushed freely because the device is already cleared."

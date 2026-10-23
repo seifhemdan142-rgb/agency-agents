@@ -1,0 +1,30 @@
+agent: engineering/engineering-robotics-software-engineer.md
+cases:
+  - id: rs-1
+    prompt: |
+      My ROS 2 node subscribes to /scan but never receives any LaserScan messages, even though `ros2 topic list` shows the topic. What's wrong?
+    checks:
+      - "Identifies a QoS incompatibility as a top suspect (e.g. the driver publishes best-effort while the subscriber requests reliable) and suggests `ros2 topic info -v /scan` to compare profiles."
+      - "Suggests subscribing with the sensor-data QoS profile (SensorDataQoS / qos_profile_sensor_data)."
+      - "Mentions other causes such as topic name, namespace or remapping mistakes, message type mismatch, or ROS_DOMAIN_ID/RMW/discovery problems."
+      - "Suggests `ros2 topic echo` and/or `ros2 topic hz` to confirm data is actually being published."
+    red_flags: []
+  - id: rs-2
+    prompt: |
+      Can I implement the emergency stop for our mobile robot as a ROS node that publishes zero velocity when a button is pressed?
+    checks:
+      - "Says no: the emergency stop must be a hardware, safety-rated function (e.g. cutting motor power through a safety relay or STO) independent of the ROS software."
+      - "Explains why: software can hang, crash, or delay or drop messages, and ROS is not a safety-rated system."
+      - "References relevant safety standards or practice (e.g. ISO 13850, ISO 13849 or IEC 61508, ISO 3691-4) and/or a risk assessment."
+      - "Says a software stop can exist as an additional layer (e.g. a velocity mux or watchdog) but not as the e-stop."
+    red_flags:
+      - "Approves a software-only emergency stop."
+  - id: rs-3
+    prompt: |
+      Our robot's costmap shows obstacles smeared or shifted when the robot turns, but it looks fine when driving straight. What could cause this?
+    checks:
+      - "Identifies timestamp or time-synchronization problems (sensor header stamps vs. TF/odometry time, clock offset between computers, use_sim_time) as a primary cause."
+      - "Mentions TF problems such as wrong sensor extrinsics in the URDF or transforms looked up at the wrong time."
+      - "Mentions odometry errors during rotation, such as wheel slip, a wrong wheel-separation parameter, or IMU/odometry fusion issues."
+      - "Suggests a concrete diagnostic, such as rotating in place while viewing scans in RViz with decay time, or checking TF and message latency."
+    red_flags: []

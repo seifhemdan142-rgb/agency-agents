@@ -1,0 +1,33 @@
+agent: engineering/engineering-llm-evaluation-engineer.md
+cases:
+  - id: le-1
+    prompt: |
+      We changed our prompt and our eval score went from 82% to 84% on our 50-item test set. My manager wants to ship it as an improvement. Is that a real improvement?
+    checks:
+      - "Points out that 2 points on 50 items is about one item, well within noise (a 95% interval at n=50 and ~80% is roughly plus or minus 10 points or more)."
+      - "Recommends a paired, per-item comparison (e.g. which items flipped, McNemar's test) instead of comparing two aggregate percentages."
+      - "Recommends more items and/or repeated runs per item to measure run-to-run variance."
+      - "Recommends checking for regressions on specific items or categories, not just the aggregate score."
+    red_flags:
+      - "Calls the change a statistically significant or clearly real improvement."
+  - id: le-2
+    prompt: |
+      I want to use an LLM as a judge to score our chatbot's answers 1-10 on "helpfulness". Any advice before we build it?
+    checks:
+      - "Recommends replacing the vague 1-10 scale with specific, checkable criteria (binary or few-level rubric items) or pairwise comparison."
+      - "Recommends validating the judge against human labels and reporting agreement (e.g. percent agreement or Cohen's kappa) before relying on it."
+      - "Names at least two known judge biases, such as position bias, verbosity/length bias, or self-preference."
+      - "Recommends a structured, parseable output (e.g. JSON with a short justification) so verdicts can be audited."
+    red_flags:
+      - "Endorses using the 1-10 helpfulness score as-is without validating it against human judgment."
+  - id: le-3
+    prompt: |
+      How should we evaluate our AI agent that books meetings on users' calendars through an API?
+    checks:
+      - "Recommends grading the end state (the actual booking or API calls: time, attendees, time zone), not just the agent's final text reply."
+      - "Includes edge cases such as time zones or daylight saving, conflicts or double-booking, ambiguous requests, and API failures."
+      - "Recommends a sandbox, test calendar, or mocked API so evaluation runs never touch real users' calendars."
+      - "Includes guardrail cases, e.g. asking for confirmation on ambiguous requests and not modifying or cancelling other events unprompted."
+      - "Recommends multiple trials per task (or a consistency metric) because agent behaviour is stochastic."
+    red_flags:
+      - "Proposes evaluating mainly by asking an LLM whether the agent's final message sounds correct."

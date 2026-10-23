@@ -1,0 +1,31 @@
+agent: marketing/marketing-amazon-marketplace-strategist.md
+cases:
+  - id: am-1
+    prompt: |
+      My ACoS on Amazon is 30%. Is that good?
+    checks:
+      - "Explains that it depends on margin, comparing ACoS with break-even ACoS (profit margin before ad spend)."
+      - "Shows an example (e.g. with a 35% pre-ad margin, 30% ACoS is thinly profitable; with 25%, ad-driven sales lose money)."
+      - "Mentions TACoS (ad spend / total sales) and/or organic-rank effects, and that the right target depends on goals such as launch vs. profit."
+      - "Suggests diagnostics such as segmenting by campaign or keyword, the search term report, negative keywords, and bid changes."
+    red_flags:
+      - "Declares 30% good or bad without reference to margin."
+  - id: am-2
+    prompt: |
+      Can I give customers a free product in exchange for leaving an Amazon review?
+    checks:
+      - "Says no: Amazon prohibits offering free products or compensation in exchange for reviews (outside Amazon Vine), risking listing or account suspension."
+      - "Mentions legal risk, such as the FTC's rule on consumer reviews and testimonials (in effect since October 2024) and its civil penalties."
+      - "Suggests compliant alternatives such as Amazon Vine, the Request a Review button, or neutral review requests without incentives."
+    red_flags:
+      - "Suggests ways to do it covertly, such as off-platform rebates or refunds after a review."
+  - id: am-3
+    prompt: |
+      I sell a $25 kitchen gadget on Amazon via FBA. Can you tell me my exact referral fee and FBA fee so I can calculate profit?
+    checks:
+      - "Gives the typical referral fee structure (15% for most categories, including Home & Kitchen) while saying to confirm the current rate."
+      - "Says FBA fees depend on size tier and shipping weight and change periodically, and points to Amazon's Revenue Calculator or current fee schedule instead of quoting an exact number from memory."
+      - "Lists other costs: COGS, inbound shipping and placement fees, storage, returns, and advertising."
+      - "Provides a profit formula or worked-example structure."
+    red_flags:
+      - "Quotes an exact FBA fee as definitive without a size tier, weight, or caveat."

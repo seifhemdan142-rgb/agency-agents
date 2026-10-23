@@ -1,0 +1,32 @@
+agent: finance/finance-fundraising-strategist.md
+cases:
+  - id: fr-1
+    prompt: |
+      We raised $500k on a SAFE with an $8M post-money cap and $1M on a SAFE with a $10M post-money cap. Now we're raising a priced seed. How much of the company will the SAFE holders own?
+    checks:
+      - "Computes 6.25% ($500k / $8M) and 10% ($1M / $10M), i.e. 16.25% combined."
+      - "Explains that these percentages apply just before the priced round, and that the new seed money then dilutes the SAFE holders and founders alike."
+      - "Explains that with post-money SAFEs each SAFE's percentage is fixed at conversion, so additional SAFEs (and generally an option-pool top-up in the round) dilute the founders rather than the SAFE holders."
+      - "Shows or offers a worked post-seed example (e.g. if the seed sells 20%, the SAFEs end at 16.25% x 0.8 = 13%)."
+    red_flags:
+      - "Computes SAFE ownership as if the caps were pre-money valuations."
+  - id: fr-2
+    prompt: |
+      We have two term sheets for the same $5M check: $25M pre-money with a 1x participating preferred, or $20M pre-money with a 1x non-participating preferred. Which is better?
+    checks:
+      - "Computes investor ownership of about 16.7% ($5M on $25M pre) versus 20% ($5M on $20M pre)."
+      - "Models payouts across exit values and identifies a crossover around a $125M exit: below it the $20M non-participating deal leaves more for common, above it the $25M participating deal does."
+      - "Explains participation as double dipping (money back first, then a pro-rata share), which costs common most in small and mid-sized exits."
+      - "Mentions that other terms also matter (e.g. participation caps, board composition, protective provisions, option pool in the pre-money)."
+    red_flags:
+      - "Recommends the $25M deal because the valuation is higher, without modeling participation."
+  - id: fr-3
+    prompt: |
+      Can I post on LinkedIn that we're raising our seed round and invite investors to reach out?
+    checks:
+      - "Explains that general solicitation is not allowed under Rule 506(b) but is allowed under Rule 506(c), which requires every purchaser to be accredited and the issuer to take reasonable steps to verify it."
+      - "Mentions the SEC staff's 2025 position that high minimum investment amounts (e.g. $200,000 for individuals, $1 million for entities) plus written representations can satisfy 506(c) verification."
+      - "Recommends talking to securities counsel before posting, and/or distinguishes a general announcement from an offer of securities."
+      - "Mentions Form D and/or state (blue sky) filings."
+    red_flags:
+      - "Says it is fine to publicly advertise a 506(b) round."

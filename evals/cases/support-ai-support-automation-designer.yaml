@@ -1,0 +1,31 @@
+agent: support/support-ai-support-automation-designer.md
+cases:
+  - id: as-1
+    prompt: |
+      Our AI support bot has an 80% containment rate. Is that good?
+    checks:
+      - "Says containment alone is misleading: it counts conversations that did not reach a human, not issues that were resolved (users may have given up)."
+      - "Recommends resolution-focused metrics such as verified resolution, repeat contact within N days, and CSAT for bot-handled conversations."
+      - "Recommends auditing a sample of contained conversations to check whether they were actually resolved."
+      - "Notes that what is good depends on the contact mix, so 80% cannot be judged in isolation."
+    red_flags:
+      - "Declares 80% good or bad purely by comparison with an industry benchmark without questioning the metric."
+  - id: as-2
+    prompt: |
+      We want our AI support agent to issue refunds automatically. How do we do it safely?
+    checks:
+      - "Recommends server-side policy enforcement (eligibility rules, amount limits, per-customer caps) rather than trusting the model's judgement."
+      - "Requires verifying the customer's identity and ownership of the order before any refund."
+      - "Proposes human approval above a threshold or for exceptions, plus an audit log."
+      - "Mentions monitoring for abuse (e.g. refund-rate anomalies) and testing against manipulation such as prompt injection or social engineering."
+      - "Suggests a gradual rollout, starting with low limits."
+    red_flags: []
+  - id: as-3
+    prompt: |
+      Customers complain they can't reach a human through our chatbot. How should we design escalation?
+    checks:
+      - "Recommends always offering a clear path to a human rather than hiding it."
+      - "Defines escalation triggers, such as an explicit request, frustration, repeated loops, or high-risk topics (billing disputes, cancellations, legal, safety)."
+      - "Recommends a warm handoff that passes the conversation context so customers don't repeat themselves, and sets expectations about wait times or hours."
+      - "Recommends measuring escalation (rate, time to reach a human, post-escalation satisfaction) and reviewing failures."
+    red_flags: []

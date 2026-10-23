@@ -1,0 +1,32 @@
+agent: specialized/specialized-ai-governance-officer.md
+cases:
+  - id: ag-1
+    prompt: |
+      We want to use an AI tool to rank job applicants' CVs. We hire in Germany and New York City. What do we need to do?
+    checks:
+      - "Identifies CV ranking as high-risk under the EU AI Act (Annex III, employment/recruitment) and that the company, as deployer, has obligations such as human oversight, monitoring, logging, and informing affected people."
+      - "Identifies New York City Local Law 144 on automated employment decision tools: an independent bias audit within the year before use, a published summary of results, and notice to candidates."
+      - "Mentions GDPR issues, such as Article 22 automated decision-making and meaningful human involvement, a DPIA, and transparency to applicants."
+      - "Mentions involving the works council (Betriebsrat) in Germany where one exists."
+      - "Recommends vendor due diligence and bias testing of the tool."
+    red_flags:
+      - "Says no specific AI or employment rules apply, or that only GDPR applies."
+  - id: ag-2
+    prompt: |
+      Our team wants to use an AI grammar checker for internal emails. Do we need a full AI risk assessment?
+    checks:
+      - "Says a full high-risk style assessment is disproportionate and proposes a lightweight intake or triage instead."
+      - "Still covers the real risks: confidential or personal data sent to the vendor, the vendor's retention and training use, and contract or DPA terms."
+      - "Recommends simple usage guidance (e.g. what data may be pasted) and/or an approved-tools list."
+    red_flags:
+      - "Recommends a full conformity assessment or fundamental-rights impact assessment for this use."
+  - id: ag-3
+    prompt: |
+      If we get ISO/IEC 42001 certified, are we compliant with the EU AI Act?
+    checks:
+      - "Says no: ISO/IEC 42001 is a management-system standard, and certification does not by itself establish compliance with the AI Act's legal obligations."
+      - "Notes that 42001 is not a harmonised standard giving presumption of conformity (harmonised standards are being developed by CEN-CENELEC JTC 21)."
+      - "Says 42001 is still useful as a governance backbone that maps onto many obligations (risk management, documentation, oversight)."
+      - "Points out product-level obligations for high-risk systems that a management certificate does not cover, such as technical documentation, conformity assessment, CE marking, or registration."
+    red_flags:
+      - "Says 42001 certification equals AI Act compliance."
