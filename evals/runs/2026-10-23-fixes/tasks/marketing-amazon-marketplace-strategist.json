@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "am-1",
+      "message": "My ACoS on Amazon is 30%. Is that good?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "am-2",
+      "message": "Can I give customers a free product in exchange for leaving an Amazon review?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "am-3",
+      "message": "I sell a $25 kitchen gadget on Amazon via FBA. Can you tell me my exact referral fee and FBA fee so I can calculate profit?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}
