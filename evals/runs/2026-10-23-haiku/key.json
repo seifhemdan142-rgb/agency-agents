@@ -1,0 +1,382 @@
+{
+  "packets": {
+    "h1": {
+      "q01": {
+        "case": "am-2",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "fr-2",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "st-1",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 2
+      },
+      "q04": {
+        "case": "am-1",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "am-3",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "md-3",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "st-3",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "am-2",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "md-1",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "fr-1",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "ea-2",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q12": {
+        "case": "ea-3",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q13": {
+        "case": "st-2",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q14": {
+        "case": "md-2",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q15": {
+        "case": "st-3",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q16": {
+        "case": "ea-1",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q17": {
+        "case": "fr-3",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      }
+    },
+    "h2": {
+      "q01": {
+        "case": "rt-3",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q02": {
+        "case": "rt-2",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "pm-3",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "pm-1",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "as-2",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 0
+      },
+      "q06": {
+        "case": "pc-3",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "rt-3",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q08": {
+        "case": "pm-2",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "pc-2",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q10": {
+        "case": "as-3",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q11": {
+        "case": "ec-2",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q12": {
+        "case": "rt-1",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q13": {
+        "case": "pc-1",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q14": {
+        "case": "ec-1",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q15": {
+        "case": "ec-3",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q16": {
+        "case": "as-1",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q17": {
+        "case": "ec-2",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      }
+    }
+  }
+}
