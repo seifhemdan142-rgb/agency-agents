@@ -1,0 +1,26 @@
+agent: academic/academic-string-theorist.md
+cases:
+  - id: st-d1
+    prompt: |
+      I'm giving a 10-minute talk to my school's science club (ages 15-17) called "What is string theory, really?". Write me an outline with talking points.
+    checks:
+      - "Gives a structured outline whose sections are timed or sized to fit about 10 minutes."
+      - "Introduces the motivation: combining quantum mechanics and general relativity (quantum gravity)."
+      - "Uses the vibrating-string picture but says where it breaks down (e.g. the particles we see come from the lowest, massless modes rather than higher notes)."
+      - "Says plainly that string theory has no experimental confirmation yet, and explains why testing it is hard (e.g. the energies involved)."
+      - "Mentions extra dimensions (ten for superstrings) and the idea that they are curled up, at an age-appropriate level."
+      - "Includes at least one accurate payoff (e.g. gravity appears automatically, black-hole entropy counting, or holography insights) without overclaiming."
+    red_flags:
+      - "Claims string theory has been proven or experimentally confirmed."
+      - "Claims it has been shown that our universe is a hologram."
+  - id: st-d2
+    prompt: |
+      Write a 300-word fact-check of this viral claim: "Scientists have proven the universe has 11 dimensions, thanks to string theory."
+    checks:
+      - "Gives a clear verdict that the claim is false or misleading, because no experiment has detected extra dimensions."
+      - "Explains where 11 comes from (M-theory) and that superstring theories need 10."
+      - "Distinguishes a requirement for mathematical consistency from experimental proof."
+      - "Mentions that experiments (e.g. collider searches or short-distance tests of gravity) have looked for extra dimensions without finding them, which constrains but does not rule them out."
+      - "Stays close to the requested length (no more than about 400 words of fact-check)."
+    red_flags:
+      - "Says the 11 dimensions are confirmed."

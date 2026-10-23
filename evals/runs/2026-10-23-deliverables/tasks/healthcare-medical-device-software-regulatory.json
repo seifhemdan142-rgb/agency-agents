@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "md-d1",
+      "message": "Write a regulatory strategy memo for our AI tool that flags suspected pneumothorax on chest X-rays for radiologist review. We want to sell in the US and the EU.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "md-d2",
+      "message": "Draft the outline of an IEC 62304 software development plan for our class B software as a medical device.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

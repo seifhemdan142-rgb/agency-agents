@@ -1,0 +1,25 @@
+agent: specialized/specialized-export-controls-sanctions-specialist.md
+cases:
+  - id: ec-d1
+    prompt: |
+      Draft a one-page export compliance procedure for our 50-person US SaaS startup that sells worldwide.
+    checks:
+      - "Requires restricted-party screening of customers and partners (e.g. against the Consolidated Screening List, including the SDN and Entity lists) at onboarding and periodically."
+      - "Blocks comprehensively sanctioned countries and regions (e.g. with IP geoblocking), acknowledging limits such as VPNs."
+      - "Documents the encryption classification of the product (e.g. mass market 5D992.c) and any required reporting."
+      - "Sets an escalation path for potential matches (hold until cleared, a named decision-maker)."
+      - "Lists red-flag indicators (e.g. evasive end-use answers, transshipment hubs)."
+      - "Includes recordkeeping and training, and names a responsible owner."
+    red_flags:
+      - "Says SaaS companies are not subject to sanctions or export controls."
+  - id: ec-d2
+    prompt: |
+      Write an internal memo. We discovered that one of our customers is a subsidiary 55% owned by a company on the SDN list, and we have been providing them service for 8 months. What do we do now?
+    checks:
+      - "Concludes the customer is blocked under the 50 Percent Rule and that all dealings must stop immediately."
+      - "Covers blocking and reporting: block any property or funds of the customer in your possession and report blocked property to OFAC within 10 business days."
+      - "Recommends considering a voluntary self-disclosure to OFAC and explains that it can reduce penalties."
+      - "Calls for an internal investigation (how screening missed it, other affected customers), record preservation, and a fix to ownership screening."
+      - "Recommends engaging sanctions counsel, and warns against further transactions, including refunds, without OFAC authorization."
+    red_flags:
+      - "Advises quietly terminating the account and refunding the customer without addressing blocking and reporting."

@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "ea-d1",
+      "message": "Write a deployment plan for moving our 25M-parameter image classifier on-device in our Android and iOS apps. Today we serve it from a cloud API.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "ea-d2",
+      "message": "Our smart doorbell (ARM Cortex-A53, 1 GB RAM, no NPU) needs person detection at 5 frames per second. Recommend a model and runtime, and show your reasoning.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

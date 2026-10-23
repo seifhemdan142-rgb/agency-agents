@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "fr-d1",
+      "message": "Draft the \"Use of Funds\" and \"Milestones\" sections of our $3M seed round deck. We're a B2B SaaS startup at $40k MRR growing 10% month over month, with a team of 6.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "fr-d2",
+      "message": "Write a short investor update email to our existing angels. We missed our quarterly revenue target by 30%, but we signed two enterprise pilots. Keep it honest.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

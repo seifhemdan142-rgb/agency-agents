@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "as-1",
+      "message": "Our AI support bot has an 80% containment rate. Is that good?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "as-2",
+      "message": "We want our AI support agent to issue refunds automatically. How do we do it safely?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "as-3",
+      "message": "Customers complain they can't reach a human through our chatbot. How should we design escalation?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

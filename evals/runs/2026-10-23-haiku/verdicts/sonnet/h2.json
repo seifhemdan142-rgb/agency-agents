@@ -1,0 +1,104 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "tie",
+    "reason": "Both cover XSS, zero-click image exfiltration, sanitizer plus CSP, and the prompt-injection link; A adds link-based exfiltration and per-layer limits, B adds phishing and scheme handling."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly say the line is not a fix, remove secrets, add output filtering/canaries and least privilege, and retest with variants."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both diagnose before acting, but B is more rigorous: neutral interviewers, a correct 31-83% interval for 6/10, and evidence-owner routing; A is solid but less careful about the small sample."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, false, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A gives construction-specific options and names the missing positioning inputs (alternative, proof, customer language); B gives decent options but never flags the missing positioning inputs."
+  },
+  "q05": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true, true], "red_flags": []},
+    "preference": "B",
+    "reason": "Both are strong; B is more concrete on order-ownership checks, read-back confirmation, idempotency handling, kill switch, and injection regression testing before launch."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A accurately states the EU hardcore treatment and the post-Leegin US rule of reason with stricter states; B's flat 'No' and vague US statement are less accurate."
+  },
+  "q07": {
+    "A": {"checks": [false, false, false, false], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "B",
+    "reason": "Answer A answers a different question (refund automation) and does not address markdown rendering security at all; B answers it correctly."
+  },
+  "q08": {
+    "A": {"checks": [true, false, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both advise against the claim and offer provable alternatives with legal review; B more clearly flags competitor-suit risk (Lanham Act) and gives a concrete approval process."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "tie",
+    "reason": "Both resolve by registration rules and evidence, fix the policy going forward, and address comp alignment; A has a sharper rule order and example, B a cleaner process."
+  },
+  "q10": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "A",
+    "reason": "Both cover visible exit, triggers, warm handoff and measurement; A adds vulnerability routing, bot disclosure, out-of-hours planning and launch gates."
+  },
+  "q11": {
+    "A": {"checks": [true, true, false, true, true], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Answer B is empty; A correctly identifies the deemed export, ECCN/country dependence, technology control plan and U.S. person definition."
+  },
+  "q12": {
+    "A": {"checks": [false, true, true, true, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "B covers direct and indirect injection, social engineering, tool-argument abuse, leakage, external enforcement and ongoing regression/monitoring; A omits direct injection tests and production monitoring."
+  },
+  "q13": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [false, true, false, true], "red_flags": []},
+    "preference": "A",
+    "reason": "A models the recurring renewal cost and asks whether the customer would be won directly, tying margin to reseller role; B gives reasonable tiering advice but ignores renewals and incremental-value comparison."
+  },
+  "q14": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, false, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both correctly apply 30%+30%=60% aggregation and say do not proceed; A adds documentation, hold, and other regimes, while B omits documenting the analysis."
+  },
+  "q15": {
+    "A": {"checks": [false, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "B directly gives the 5D992.c mass-market/ENC answer plus SaaS vs download, sanctions and screening; A is careful but never states the typical classification."
+  },
+  "q16": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both say containment alone misleads and propose resolution metrics and sampling; A also notes the number depends on the contact mix."
+  },
+  "q17": {
+    "A": {"checks": [true, true, false, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, false], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both are accurate on deemed exports and access holds; B adds the Form I-129 certification, published/fundamental-research and discrimination cautions, while A states who is a U.S. person."
+  }
+}

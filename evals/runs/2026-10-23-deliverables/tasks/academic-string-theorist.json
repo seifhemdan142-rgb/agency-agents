@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "st-d1",
+      "message": "I'm giving a 10-minute talk to my school's science club (ages 15-17) called \"What is string theory, really?\". Write me an outline with talking points.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "st-d2",
+      "message": "Write a 300-word fact-check of this viral claim: \"Scientists have proven the universe has 11 dimensions, thanks to string theory.\"\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

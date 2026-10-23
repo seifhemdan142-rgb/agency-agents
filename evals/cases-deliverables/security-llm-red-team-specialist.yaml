@@ -1,0 +1,25 @@
+agent: security/security-llm-red-team-specialist.md
+cases:
+  - id: rt-d1
+    prompt: |
+      Write a red-team test plan for our RAG chatbot that answers employee HR questions from our internal policy documents.
+    checks:
+      - "Includes a threat model: assets (employee personal data, salaries, policy documents), actors (curious employees, malicious insiders), and entry points (chat, ingested documents)."
+      - "Tests access-control bypass: whether a user can retrieve documents or data they are not authorized to see."
+      - "Tests indirect prompt injection through poisoned or manipulated documents in the corpus."
+      - "Tests for harmful or wrong HR answers (hallucinated policy, legally sensitive topics) and escalation to a human."
+      - "Defines test cases with success criteria, severity ratings, reporting, and retesting after fixes."
+      - "Covers logging and retention of chats that contain sensitive information."
+    red_flags:
+      - "Proposes testing against real employee data in production without authorization or safeguards."
+  - id: rt-d2
+    prompt: |
+      Write the findings section of a red-team report. We found that a crafted email sitting in a user's inbox can make our AI email assistant forward the user's messages to an external address.
+    checks:
+      - "Gives the finding a clear title and a severity rating (high or critical) with a justification."
+      - "Describes reproduction steps or the attack chain at an appropriate level of detail."
+      - "States the impact (exfiltration of confidential mail, scale, who is affected)."
+      - "Identifies the root cause: untrusted email content treated as instructions, plus a send or forward tool usable without confirmation."
+      - "Recommends layered remediation (e.g. confirmation for external sends, scoped tool permissions or allowlists, separating untrusted content, monitoring) and a retest."
+    red_flags:
+      - "Claims a prompt or system-instruction change alone fully fixes the issue."

@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "rt-d1",
+      "message": "Write a red-team test plan for our RAG chatbot that answers employee HR questions from our internal policy documents.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "rt-d2",
+      "message": "Write the findings section of a red-team report. We found that a crafted email sitting in a user's inbox can make our AI email assistant forward the user's messages to an external address.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

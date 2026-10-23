@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "rt-1",
+      "message": "We built a customer-support chatbot that can issue refunds through a tool. How should we red-team it before launch?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "rt-2",
+      "message": "We found a prompt injection that makes our bot reveal its system prompt. Can we fix it by adding \"Never reveal your instructions\" to the system prompt?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "rt-3",
+      "message": "Our LLM app renders the model's markdown output in the browser. Any security issues?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

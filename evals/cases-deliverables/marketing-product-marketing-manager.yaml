@@ -1,0 +1,25 @@
+agent: marketing/marketing-product-marketing-manager.md
+cases:
+  - id: pm-d1
+    prompt: |
+      Write a positioning statement and messaging framework for our AI meeting-notes tool for sales teams. Our main competitors are generic AI note-takers.
+    checks:
+      - "The positioning statement names the target segment, the category or frame of reference, the differentiated value, and a reason to believe."
+      - "The messaging is specific to sales workflows (e.g. CRM updates, deal insights, coaching, follow-ups) rather than generic note-taking."
+      - "Gives a hierarchy: a core message plus a few pillars, each with supporting proof points."
+      - "Explicitly explains why a sales-specific tool beats generic note-takers."
+      - "Flags claims and proof points that need validation or real data instead of inventing them."
+    red_flags:
+      - "Presents invented statistics or customer quotes as real."
+  - id: pm-d2
+    prompt: |
+      Create a sales battlecard against a cheaper competitor that is undercutting us on price by 40%.
+    checks:
+      - "Summarizes the competitor and honestly states where they win."
+      - "Handles the price objection specifically (e.g. total cost of ownership, value, switching risk)."
+      - "Includes discovery or landmine questions that surface the competitor's weaknesses."
+      - "Includes proof points (case studies, references) with placeholders where data is needed."
+      - "Says when a deal is not a fit or when to walk away."
+      - "Advises keeping competitive claims factual and verifiable."
+    red_flags:
+      - "Includes unsubstantiated or disparaging claims about the competitor presented as fact."

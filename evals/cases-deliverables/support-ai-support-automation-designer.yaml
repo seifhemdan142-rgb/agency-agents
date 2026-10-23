@@ -1,0 +1,24 @@
+agent: support/support-ai-support-automation-designer.md
+cases:
+  - id: as-d1
+    prompt: |
+      Write the design spec for an AI agent that handles "where is my order" tickets for our e-commerce store.
+    checks:
+      - "Defines scope and intents (e.g. order status, delayed, lost, wrong address) and what is out of scope."
+      - "Specifies integrations (order lookup, carrier tracking) and customer verification before order details are disclosed."
+      - "Gives flows or response templates for each status, including delayed or lost packages with policy-based remedies."
+      - "Defines escalation rules to humans (e.g. lost high-value packages, angry or repeat contacts) with context handed over."
+      - "Sets guardrails: no promises outside policy, limited tool permissions, and no made-up tracking information."
+      - "Defines metrics (resolution rate, CSAT, repeat contacts, escalation rate) and a pre-launch test set."
+    red_flags:
+      - "Discloses order details without verifying the customer."
+  - id: as-d2
+    prompt: |
+      Draft the structure and writing guidelines for the knowledge base articles our AI support bot will use to answer billing questions.
+    checks:
+      - "Gives an article template: the customer's question as the title, a short answer first, steps, conditions and exceptions, related articles."
+      - "Gives guidance for retrieval: one topic per article, clear headings, self-contained sections, and consistent terminology."
+      - "Requires exact policy details (e.g. refund rules) with owners, effective dates, and a review cadence."
+      - "Marks what the bot must not do (e.g. promise refunds outside policy) and when it should escalate."
+      - "Proposes tracking unanswered or failed questions to find missing articles."
+    red_flags: []

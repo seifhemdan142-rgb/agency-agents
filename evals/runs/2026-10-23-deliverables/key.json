@@ -1,0 +1,272 @@
+{
+  "packets": {
+    "d1": {
+      "q01": {
+        "case": "fr-d1",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "pm-d2",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "ec-d1",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "ec-d2",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "st-d1",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 2
+      },
+      "q06": {
+        "case": "st-d2",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "fr-d2",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "fr-d2",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "pm-d2",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "pm-d1",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "pc-d1",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 0
+      },
+      "q12": {
+        "case": "pc-d2",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      }
+    },
+    "d2": {
+      "q01": {
+        "case": "ea-d2",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "ea-d1",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "am-d1",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "am-d2",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "rt-d1",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "md-d2",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "md-d1",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "rt-d2",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "rt-d2",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "rt-d2",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "as-d2",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 0
+      },
+      "q12": {
+        "case": "as-d1",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      }
+    }
+  }
+}

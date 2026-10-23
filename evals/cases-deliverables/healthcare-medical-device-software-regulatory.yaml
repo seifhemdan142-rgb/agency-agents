@@ -1,0 +1,25 @@
+agent: healthcare/healthcare-medical-device-software-regulatory.md
+cases:
+  - id: md-d1
+    prompt: |
+      Write a regulatory strategy memo for our AI tool that flags suspected pneumothorax on chest X-rays for radiologist review. We want to sell in the US and the EU.
+    checks:
+      - "Identifies a likely US pathway: a 510(k) against existing radiology AI predicates (e.g. computer-aided triage under 21 CFR 892.2080, or computer-aided detection), with De Novo as the fallback."
+      - "Applies EU MDR Rule 11 (at least class IIa, possibly higher) and the need for a notified body."
+      - "Notes that the EU AI Act also applies on top of the MDR, as a high-risk AI system in a device requiring a notified body."
+      - "Lays out a clinical evidence plan: standalone performance (sensitivity and specificity) on representative multi-site data, with subgroup analysis, and/or a reader study."
+      - "Covers the quality and lifecycle framework (e.g. ISO 13485, IEC 62304, ISO 14971, cybersecurity) and plans for model updates (e.g. a PCCP)."
+      - "Recommends early regulator engagement (an FDA Pre-Submission) and notified body selection."
+    red_flags:
+      - "Claims the tool is exempt as clinical decision support because a radiologist reviews its output."
+  - id: md-d2
+    prompt: |
+      Draft the outline of an IEC 62304 software development plan for our class B software as a medical device.
+    checks:
+      - "Covers the main IEC 62304 development activities: planning, requirements, architecture, design, unit implementation and verification, integration and integration testing, system testing, and release."
+      - "Includes the supporting processes: software risk management (linked to ISO 14971), configuration management, problem resolution, and maintenance."
+      - "Addresses identifying and managing SOUP (third-party software)."
+      - "Requires traceability between requirements, risk controls, and tests."
+      - "Defines the documentation deliverables and the reviews or approvals for each phase."
+    red_flags:
+      - "Leaves out risk management entirely."

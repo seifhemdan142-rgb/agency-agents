@@ -1,0 +1,74 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both allocate exactly $3M, tie it to a $125k/month burn and 24 months of runway, and use correct growth math. A is more rigorous: it sanity-checks sustaining 10% growth, gates hiring on evidence, and flags the Series A bars as heuristics."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both are complete battlecards: they concede where the competitor wins, handle the 40% objection through TCO, set discovery traps, give a walk-away rule, and insist on provable claims. A adds the legal and verification caution; B adds guardrails and a talk track."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both cover screening, geoblocking, classification, holds, red flags and records. A is more accurate and current: it separates remote SaaS access from downloads and covers the 2025 BIS affiliates rule and the OFAC 10-year retention. B is clean and adds contract clauses."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both conclude the customer is blocked, stop service, bar refunds, address blocking and 10-business-day reporting, weigh voluntary self-disclosure, and call for investigation and remediation. A has owners and dates; B is clearer on blocking and on retaining counsel."
+  },
+  "q05": {
+    "A": {"checks": [true, true, false, true, true, true], "red_flags": [false, false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false, false]},
+    "preference": "B",
+    "reason": "B states where the violin analogy breaks and keeps every claim calibrated, including holography as an extrapolation. A presents the particles-as-vibrations picture without that caveat but is otherwise accurate and timed."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both reach a clear False verdict, explain 10 versus 11 dimensions, separate consistency from proof, cite null collider and gravity results, and stay near 300 words. B adds the 26-dimension note; A cites a specific experiment."
+  },
+  "q07": {
+    "A": {"checks": [false, false, false, false, false, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Answer A is empty and delivers nothing. B is an honest, well-hedged draft that leads with the miss, treats the pilots as not-yet-revenue, includes metrics and runway, and makes specific asks."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both lead with the miss, explain it, hedge the pilots, include metrics and runway placeholders, and make concrete asks. A is more rigorous on runway and definitions; B is slightly tighter in structure."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A is a complete, honest battlecard against a cheaper competitor. B answers a different task (a partner program) and does not address the request."
+  },
+  "q10": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [true]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "B gives a complete positioning statement with a stated proof requirement, per-pillar proof to collect, and honest hypothesis labeling, including that competitors already sync to CRMs. A is rich copy but asserts unsourced figures like 15-30 minutes of post-call work and assumes product features."
+  },
+  "q11": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": []},
+    "preference": "A",
+    "reason": "Both define tiers, benefits, registration, comp neutrality, KPIs and tier movement. A grounds the discounts in a break-even model versus direct selling, while B's claim that partner-sourced deals are cheaper than direct is unsupported given its recurring renewal margins."
+  },
+  "q12": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give a workable 30-60-90 with milestones and a day-90 review. B has richer Germany-specific content (AVV, TOMs, Betriebsrat, events), while A has stronger compliance gating, including resale price maintenance and GDPR on contact data."
+  }
+}

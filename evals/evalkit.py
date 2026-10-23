@@ -113,8 +113,8 @@ def words(text):
     return len(text.split())
 
 
-def user_message(prompt):
-    return f"{prompt.strip()}\n\n(Please answer in under {WORD_LIMIT} words.)"
+def user_message(prompt, word_limit=WORD_LIMIT):
+    return f"{prompt.strip()}\n\n(Please answer in under {word_limit} words.)"
 
 
 def persona_body(agent_path):
@@ -197,35 +197,56 @@ def select(suites, agents_arg):
 
 # --- prepare / status -------------------------------------------------------
 
+def cases_arg(path):
+    """Resolve a --cases directory given relative to the repository root or the current directory."""
+    if not path:
+        return CASES_DIR
+    p = Path(path)
+    return p if p.is_absolute() or p.exists() else REPO / p
+
+
+def run_cases_dir(meta):
+    return REPO / meta.get("cases_dir", "evals/cases")
+
+
 def cmd_validate(args):
-    suites = load_cases()
+    suites = load_cases(cases_arg(args.cases))
     n = sum(len(s["cases"]) for s in suites.values())
     checks = sum(len(c["checks"]) for s in suites.values() for c in s["cases"])
     print(f"OK: {len(suites)} agents, {n} cases, {checks} checks")
 
 
-def prepare_run(run, suites, stems, seed):
+def prepare_run(run, suites, stems, seed, cases_dir=CASES_DIR, word_limit=None, note=None):
     run = Path(run)
     meta_path = run / "run.json"
+    cases_rel = Path(cases_dir).resolve().relative_to(REPO).as_posix()
     if meta_path.exists():
         meta = load_json(meta_path)
+        if meta.get("cases_dir", "evals/cases") != cases_rel:
+            raise EvalError(f"{meta_path} uses cases from {meta.get('cases_dir', 'evals/cases')}, not {cases_rel}")
+        if word_limit and word_limit != meta.get("word_limit", WORD_LIMIT):
+            raise EvalError(f"{meta_path} uses a {meta.get('word_limit', WORD_LIMIT)}-word limit, not {word_limit}")
     else:
-        meta = {"created": datetime.date.today().isoformat(), "seed": seed,
-                "word_limit": WORD_LIMIT, "agents": {}}
+        meta = {"created": datetime.date.today().isoformat(), "seed": seed, "cases_dir": cases_rel,
+                "word_limit": word_limit or WORD_LIMIT, "agents": {}}
+        if note:
+            meta["note"] = note
+    limit = meta.get("word_limit", WORD_LIMIT)
     for stem in stems:
         suite = suites[stem]
         meta["agents"][stem] = {"agent": suite["agent"], "cases": [c["id"] for c in suite["cases"]]}
         # Tasks carry only the messages: no checklist, no agent path.
         write_json(run / "tasks" / f"{stem}.json",
-                   {"cases": [{"id": c["id"], "message": user_message(c["prompt"])} for c in suite["cases"]]})
+                   {"cases": [{"id": c["id"], "message": user_message(c["prompt"], limit)} for c in suite["cases"]]})
     write_json(meta_path, meta)
     return meta
 
 
 def cmd_prepare(args):
-    suites = load_cases()
+    cases_dir = cases_arg(args.cases)
+    suites = load_cases(cases_dir)
     stems = select(suites, args.agents)
-    meta = prepare_run(args.run, suites, stems, args.seed)
+    meta = prepare_run(args.run, suites, stems, args.seed, cases_dir, args.word_limit, args.note)
     print(f"Prepared {args.run}: {len(meta['agents'])} agents (tasks in {Path(args.run) / 'tasks'})")
 
 
@@ -252,12 +273,13 @@ def load_answers(run, stem, condition, case_ids):
 def cmd_status(args):
     run = Path(args.run)
     meta = load_json(run / "run.json")
+    limit = meta.get("word_limit", WORD_LIMIT)
     for stem, info in meta["agents"].items():
         cells = []
         for cond in CONDITIONS:
             try:
                 ans = load_answers(run, stem, cond, info["cases"])
-                over = [c for c in info["cases"] if words(ans[c]) > WORD_LIMIT * 1.2]
+                over = [c for c in info["cases"] if words(ans[c]) > limit * 1.2]
                 cells.append(f"{cond}=ok" + (f" (long: {','.join(over)})" if over else ""))
             except EvalError as e:
                 cells.append(f"{cond}=" + ("missing" if "missing answers" in str(e) else f"INVALID ({e})"))
@@ -354,7 +376,7 @@ def build_packet(run, name, stems, suites, key, controls, seed):
 def cmd_pack(args):
     run = Path(args.run)
     meta = load_json(run / "run.json")
-    suites = load_cases()
+    suites = load_cases(run_cases_dir(meta))
     stems = select(suites, args.agents)
     not_prepared = [s for s in stems if s not in meta["agents"]]
     if not_prepared:
@@ -563,8 +585,10 @@ def build_report(run, key, rows, meta, iters, seed):
     out = [f"# Persona evaluation report: {Path(run).name}", "",
            f"{s[judges[0]]['n']} cases across {n_agents} agents, each answered with the agent persona as "
            f"the system prompt (persona) and without it (baseline), then graded blind by "
-           f"{len(judges)} judge(s): {', '.join(judges)}.", "",
-           "## Headline", "",
+           f"{len(judges)} judge(s): {', '.join(judges)}.", ""]
+    if meta.get("note"):
+        out += [meta["note"], ""]
+    out += ["## Headline", "",
            "| Judge | Persona preferred | Baseline preferred | Tie / both bad | Persona win rate (decisive) | 95% CI | Sign test p |",
            "|---|---:|---:|---:|---:|---|---:|"]
     for j in judges:
@@ -675,9 +699,11 @@ def cmd_run(args):
     if args.judge_model == args.model:
         print("warning: the judge model is the model under test; expect some self-preference", file=sys.stderr)
     run = Path(args.run)
-    suites = load_cases()
+    cases_dir = cases_arg(args.cases)
+    suites = load_cases(cases_dir)
     stems = select(suites, args.agents)
-    meta = prepare_run(run, suites, stems, args.seed)
+    meta = prepare_run(run, suites, stems, args.seed, cases_dir, args.word_limit,
+                       args.note or f"Answers by {args.model}; judged by {args.judge_model}.")
     client = anthropic.Anthropic(max_retries=5)
     totals = {}
 
@@ -697,7 +723,8 @@ def cmd_run(args):
             answers, info = {}, {}
             for c in suite["cases"]:
                 print(f"answer {stem} {c['id']} {cond}", file=sys.stderr)
-                text, i = call_claude(client, args.model, user_message(c["prompt"]), system=system)
+                text, i = call_claude(client, args.model, user_message(c["prompt"], meta["word_limit"]),
+                                      system=system)
                 answers[c["id"]] = text if i["status"] != "refusal" else "[no answer: the model refused]"
                 info[c["id"]] = i
                 tally(i)
@@ -737,7 +764,17 @@ def cmd_run(args):
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("validate", help="check every case file").set_defaults(fn=cmd_validate)
+    def cases_opt(sp):
+        sp.add_argument("--cases", help="case directory (default: evals/cases)")
+
+    def new_run_opts(sp):
+        cases_opt(sp)
+        sp.add_argument("--word-limit", type=int, help=f"word limit stated in each message (default {WORD_LIMIT})")
+        sp.add_argument("--note", help="a line for the report, e.g. which model answered")
+
+    sp = sub.add_parser("validate", help="check every case file")
+    cases_opt(sp)
+    sp.set_defaults(fn=cmd_validate)
 
     def run_args(sp, seed=True):
         sp.add_argument("--run", required=True, help="run directory, e.g. evals/runs/2026-10-23")
@@ -747,6 +784,7 @@ def main(argv=None):
     sp = sub.add_parser("prepare", help="create a run directory with answer tasks")
     run_args(sp)
     sp.add_argument("--agents", help="comma-separated agent stems (default: all)")
+    new_run_opts(sp)
     sp.set_defaults(fn=cmd_prepare)
 
     sp = sub.add_parser("status", help="show and validate a run's answers and verdicts")
@@ -772,6 +810,7 @@ def main(argv=None):
     sp = sub.add_parser("run", help="API mode: answer, judge and score with the Anthropic SDK")
     run_args(sp)
     sp.add_argument("--agents", help="comma-separated agent stems (default: all)")
+    new_run_opts(sp)
     sp.add_argument("--model", default=DEFAULT_MODEL, help=f"model under test (default {DEFAULT_MODEL})")
     sp.add_argument("--judge-model", default=DEFAULT_JUDGE_MODEL, help=f"judge model (default {DEFAULT_JUDGE_MODEL})")
     sp.add_argument("--key", help="blinding key path (default: <run>/key.json)")
