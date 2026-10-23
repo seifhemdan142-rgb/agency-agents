@@ -1,0 +1,44 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both correctly explain 506(b) vs 506(c), the 2025 staff position and the need for counsel, and neither mentions Form D or blue sky filings. A adds concrete figures and useful alternatives (Rule 148 demo days, Reg CF, announcing after closing), so it is somewhat more useful."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both are physically accurate and cover oscillator levels, the massless sector, compactification and the graviton. B gives a cleaner, more rigorous treatment, while A has stray bracketed tags like [CONSISTENCY] and a broken sentence ('The mechanisms are [CONSISTENCY].')."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both correctly say no, with accurate treatment of the AdS vs de Sitter issue and the open status of dS/flat holography. A is clean and clear, while B has leaked bracket tags ([STRONG], [OPEN], [SCENARIO]) throughout that detract from readability."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false, false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false, false]},
+    "preference": "tie",
+    "reason": "Both correctly say the LHC constrained TeV-scale SUSY rather than disproving string theory, acknowledge the naturalness setback and admit the lack of testable predictions. A is more thorough but carries stray tags like [MYTH] and [MATH]; B is concise and clean."
+  },
+  "q05": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly compute 6.25% + 10% = 16.25%, explain that post-money SAFEs dilute founders rather than each other, and give correct post-seed examples (13.0% and 12.2%). The caveats are accurate in both, so they are equally good."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give correct ownership figures and payout tables, which I verified, with a $125M crossover. Both explain the double dip, recommend the $20M non-participating deal and suggest negotiating a cap or non-participation, so they are equally strong."
+  },
+  "q07": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A gives a correct, modeled comparison with the $125M crossover and the other terms to weigh. B is a non-answer ('I'm not sure') that offers no analysis."
+  }
+}
