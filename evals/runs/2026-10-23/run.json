@@ -1,0 +1,167 @@
+{
+  "created": "2026-10-23",
+  "seed": 20261023,
+  "word_limit": 450,
+  "agents": {
+    "academic-string-theorist": {
+      "agent": "academic/academic-string-theorist.md",
+      "cases": [
+        "st-1",
+        "st-2",
+        "st-3"
+      ]
+    },
+    "engineering-edge-ai-engineer": {
+      "agent": "engineering/engineering-edge-ai-engineer.md",
+      "cases": [
+        "ea-1",
+        "ea-2",
+        "ea-3"
+      ]
+    },
+    "engineering-llm-evaluation-engineer": {
+      "agent": "engineering/engineering-llm-evaluation-engineer.md",
+      "cases": [
+        "le-1",
+        "le-2",
+        "le-3"
+      ]
+    },
+    "engineering-llm-inference-engineer": {
+      "agent": "engineering/engineering-llm-inference-engineer.md",
+      "cases": [
+        "li-1",
+        "li-2",
+        "li-3"
+      ]
+    },
+    "engineering-robotics-software-engineer": {
+      "agent": "engineering/engineering-robotics-software-engineer.md",
+      "cases": [
+        "rs-1",
+        "rs-2",
+        "rs-3"
+      ]
+    },
+    "finance-fundraising-strategist": {
+      "agent": "finance/finance-fundraising-strategist.md",
+      "cases": [
+        "fr-1",
+        "fr-2",
+        "fr-3"
+      ]
+    },
+    "healthcare-medical-device-software-regulatory": {
+      "agent": "healthcare/healthcare-medical-device-software-regulatory.md",
+      "cases": [
+        "md-1",
+        "md-2",
+        "md-3"
+      ]
+    },
+    "marketing-amazon-marketplace-strategist": {
+      "agent": "marketing/marketing-amazon-marketplace-strategist.md",
+      "cases": [
+        "am-1",
+        "am-2",
+        "am-3"
+      ]
+    },
+    "marketing-product-marketing-manager": {
+      "agent": "marketing/marketing-product-marketing-manager.md",
+      "cases": [
+        "pm-1",
+        "pm-2",
+        "pm-3"
+      ]
+    },
+    "sales-partnerships-channel-manager": {
+      "agent": "sales/sales-partnerships-channel-manager.md",
+      "cases": [
+        "pc-1",
+        "pc-2",
+        "pc-3"
+      ]
+    },
+    "sales-revops-architect": {
+      "agent": "sales/sales-revops-architect.md",
+      "cases": [
+        "ro-1",
+        "ro-2",
+        "ro-3"
+      ]
+    },
+    "security-llm-red-team-specialist": {
+      "agent": "security/security-llm-red-team-specialist.md",
+      "cases": [
+        "rt-1",
+        "rt-2",
+        "rt-3"
+      ]
+    },
+    "security-post-quantum-cryptography-engineer": {
+      "agent": "security/security-post-quantum-cryptography-engineer.md",
+      "cases": [
+        "pq-1",
+        "pq-2",
+        "pq-3"
+      ]
+    },
+    "security-software-supply-chain-engineer": {
+      "agent": "security/security-software-supply-chain-engineer.md",
+      "cases": [
+        "sc-1",
+        "sc-2",
+        "sc-3"
+      ]
+    },
+    "specialized-ai-governance-officer": {
+      "agent": "specialized/specialized-ai-governance-officer.md",
+      "cases": [
+        "ag-1",
+        "ag-2",
+        "ag-3"
+      ]
+    },
+    "specialized-compensation-rewards-specialist": {
+      "agent": "specialized/specialized-compensation-rewards-specialist.md",
+      "cases": [
+        "cr-1",
+        "cr-2",
+        "cr-3"
+      ]
+    },
+    "specialized-customs-tariff-specialist": {
+      "agent": "specialized/specialized-customs-tariff-specialist.md",
+      "cases": [
+        "ct-1",
+        "ct-2",
+        "ct-3"
+      ]
+    },
+    "specialized-export-controls-sanctions-specialist": {
+      "agent": "specialized/specialized-export-controls-sanctions-specialist.md",
+      "cases": [
+        "ec-1",
+        "ec-2",
+        "ec-3"
+      ]
+    },
+    "specialized-trust-safety-fraud-lead": {
+      "agent": "specialized/specialized-trust-safety-fraud-lead.md",
+      "cases": [
+        "ts-1",
+        "ts-2",
+        "ts-3"
+      ]
+    },
+    "support-ai-support-automation-designer": {
+      "agent": "support/support-ai-support-automation-designer.md",
+      "cases": [
+        "as-1",
+        "as-2",
+        "as-3"
+      ]
+    }
+  }
+}

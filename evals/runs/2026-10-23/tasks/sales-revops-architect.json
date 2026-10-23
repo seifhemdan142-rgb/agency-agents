@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "ro-1",
+      "message": "Our pipeline is up 40% quarter over quarter but bookings are down 10%. What's going on and what should I look at?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ro-2",
+      "message": "How should we calculate win rate for the board deck?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ro-3",
+      "message": "Inbound leads are sitting unassigned in our CRM for days. How do we fix routing?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "ts-1",
+      "message": "Our new fraud rule catches 90% of fraudulent transactions in testing. Should we turn it on?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ts-2",
+      "message": "One of our moderators found what appears to be child sexual abuse material uploaded to our platform. What should we do?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ts-3",
+      "message": "We're seeing thousands of small $1 authorizations on our checkout from many different cards. What's happening?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

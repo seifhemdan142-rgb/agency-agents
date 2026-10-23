@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "le-1",
+      "message": "We changed our prompt and our eval score went from 82% to 84% on our 50-item test set. My manager wants to ship it as an improvement. Is that a real improvement?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "le-2",
+      "message": "I want to use an LLM as a judge to score our chatbot's answers 1-10 on \"helpfulness\". Any advice before we build it?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "le-3",
+      "message": "How should we evaluate our AI agent that books meetings on users' calendars through an API?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

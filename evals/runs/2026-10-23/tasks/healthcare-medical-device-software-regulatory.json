@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "md-1",
+      "message": "We're building a smartwatch app that detects atrial fibrillation from ECG readings and alerts users. Is this a medical device in the US?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "md-2",
+      "message": "Under the EU MDR, what risk class would clinical decision support software that suggests diagnoses to doctors fall into?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "md-3",
+      "message": "Our FDA-cleared AI model gets better if we retrain it monthly on new data. Can we just push the updated model?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

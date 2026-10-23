@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "cr-1",
+      "message": "A candidate we really want is asking for $20k above the maximum of our salary range. What should we do?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "cr-2",
+      "message": "What does the EU Pay Transparency Directive require, and when does it apply?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "cr-3",
+      "message": "Our raw gender pay gap is 15%. Does that mean we're discriminating against women?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

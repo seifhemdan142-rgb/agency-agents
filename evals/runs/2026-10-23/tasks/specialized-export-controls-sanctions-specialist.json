@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "ec-1",
+      "message": "A potential customer is owned 30% each by two different people who are on OFAC's SDN list. Neither owns 50% alone. Can we do business with them?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ec-2",
+      "message": "We want to give an engineer on an H-1B visa access to our repository containing export-controlled (EAR) technology. Is that an issue?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ec-3",
+      "message": "Do we need an export license to sell our SaaS product that uses standard encryption (TLS) to customers abroad?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}
