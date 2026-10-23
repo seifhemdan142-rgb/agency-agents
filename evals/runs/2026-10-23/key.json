@@ -1,0 +1,773 @@
+{
+  "packets": {
+    "p0": {
+      "q01": {
+        "case": "fr-3",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "st-2",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "st-3",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "st-1",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 2
+      },
+      "q05": {
+        "case": "fr-1",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "fr-2",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "fr-2",
+        "agent": "finance-fundraising-strategist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "idk",
+        "n_checks": 4,
+        "n_red_flags": 1
+      }
+    },
+    "p1": {
+      "q01": {
+        "case": "ro-2",
+        "agent": "sales-revops-architect",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "rt-1",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "li-2",
+        "agent": "engineering-llm-inference-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "pq-1",
+        "agent": "security-post-quantum-cryptography-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "le-2",
+        "agent": "engineering-llm-evaluation-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "rt-2",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "li-3",
+        "agent": "engineering-llm-inference-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "pq-3",
+        "agent": "security-post-quantum-cryptography-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "pq-2",
+        "agent": "security-post-quantum-cryptography-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "li-1",
+        "agent": "engineering-llm-inference-engineer",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "idk",
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "rt-1",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q12": {
+        "case": "ro-1",
+        "agent": "sales-revops-architect",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q13": {
+        "case": "rt-3",
+        "agent": "security-llm-red-team-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q14": {
+        "case": "ro-3",
+        "agent": "sales-revops-architect",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q15": {
+        "case": "le-1",
+        "agent": "engineering-llm-evaluation-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q16": {
+        "case": "li-1",
+        "agent": "engineering-llm-inference-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q17": {
+        "case": "le-3",
+        "agent": "engineering-llm-evaluation-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      }
+    },
+    "p2": {
+      "q01": {
+        "case": "ag-2",
+        "agent": "specialized-ai-governance-officer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "as-3",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "idk",
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q03": {
+        "case": "ea-2",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "ag-1",
+        "agent": "specialized-ai-governance-officer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "rs-3",
+        "agent": "engineering-robotics-software-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q06": {
+        "case": "rs-2",
+        "agent": "engineering-robotics-software-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "ts-2",
+        "agent": "specialized-trust-safety-fraud-lead",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 2
+      },
+      "q08": {
+        "case": "rs-1",
+        "agent": "engineering-robotics-software-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q09": {
+        "case": "ts-1",
+        "agent": "specialized-trust-safety-fraud-lead",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "ea-1",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q11": {
+        "case": "as-1",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q12": {
+        "case": "ea-3",
+        "agent": "engineering-edge-ai-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q13": {
+        "case": "ts-3",
+        "agent": "specialized-trust-safety-fraud-lead",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q14": {
+        "case": "as-3",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q15": {
+        "case": "rs-3",
+        "agent": "engineering-robotics-software-engineer",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q16": {
+        "case": "ag-3",
+        "agent": "specialized-ai-governance-officer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q17": {
+        "case": "as-2",
+        "agent": "support-ai-support-automation-designer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 0
+      }
+    },
+    "p3": {
+      "q01": {
+        "case": "sc-3",
+        "agent": "security-software-supply-chain-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q02": {
+        "case": "pm-3",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "ct-3",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q04": {
+        "case": "md-2",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "pm-2",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "am-1",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "am-2",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "ct-1",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "idk",
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "md-3",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "am-3",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "sc-1",
+        "agent": "security-software-supply-chain-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q12": {
+        "case": "ct-2",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 2
+      },
+      "q13": {
+        "case": "md-1",
+        "agent": "healthcare-medical-device-software-regulatory",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q14": {
+        "case": "ct-1",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q15": {
+        "case": "pm-1",
+        "agent": "marketing-product-marketing-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q16": {
+        "case": "sc-2",
+        "agent": "security-software-supply-chain-engineer",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q17": {
+        "case": "sc-2",
+        "agent": "security-software-supply-chain-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      }
+    },
+    "p4": {
+      "q01": {
+        "case": "pc-3",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "ec-2",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "cr-1",
+        "agent": "specialized-compensation-rewards-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q04": {
+        "case": "pc-1",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q05": {
+        "case": "ec-1",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "cr-3",
+        "agent": "specialized-compensation-rewards-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "cr-3",
+        "agent": "specialized-compensation-rewards-specialist",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "cr-1",
+        "agent": "specialized-compensation-rewards-specialist",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q09": {
+        "case": "cr-2",
+        "agent": "specialized-compensation-rewards-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "ec-3",
+        "agent": "specialized-export-controls-sanctions-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "pc-2",
+        "agent": "sales-partnerships-channel-manager",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      }
+    }
+  }
+}

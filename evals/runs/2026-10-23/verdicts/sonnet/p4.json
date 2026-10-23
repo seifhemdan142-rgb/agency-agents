@@ -1,0 +1,68 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly treat minimum RPM as high risk (EU hardcore, Leegin rule of reason, stricter states), offer lawful alternatives and send pricing clauses to counsel; A lists more named alternatives (Colgate, MAP), B adds useful indirect-pressure warnings and the underlying channel fix."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly frame this as a deemed export, cover ECCN and nationality dependence, the I-129 certification, access holds and a TCP, and who is not a foreign person; neither has material errors."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "A",
+    "reason": "Both cover level, range, equity, alternatives, compression and exception documentation; A is sharper (don't up-level just for money, red-circle handling, no pay-history anchoring) and gives a tighter decision path."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "B",
+    "reason": "Both satisfy the checks; B's point that the discount recurs at every renewal is well quantified (the roughly $49K three-year figure checks out) and its incrementality and break-even framing is deeper, while A mainly adds typical margin benchmarks."
+  },
+  "q05": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both correctly apply 50 Percent Rule aggregation (60%) and conclude the entity is blocked; B adds concrete next steps, an anti-evasion warning and accurate BIS affiliates-rule status, making it slightly more actionable."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both distinguish raw from adjusted gaps, caution about controlling for level, recommend remediation and privilege; B is more methodologically rigorous (log-pay regression, bias-checked controls, privilege first, individual-level review) and accurate on directive reporting."
+  },
+  "q07": {
+    "A": {"checks": [false, false, false, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Answer A is empty, while B gives a complete and accurate treatment of raw versus adjusted gaps, analysis method, remediation, privilege and reporting obligations."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [false, false, false, false], "red_flags": []},
+    "preference": "A",
+    "reason": "A answers the salary-above-range question fully; B is an unrelated answer about a 30% reseller discount and addresses none of the checks."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give the correct 7 June 2026 transposition date, pre-hiring transparency, right to information, correct reporting thresholds and dates, and the 5%/six-month joint pay assessment; no factual errors in either."
+  },
+  "q10": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly say hosted SaaS is generally not an export, classify downloadable components (Note 4/EAR99 or 5D992.c under ENC), stress sanctions and screening, and defer to counsel; A is more direct on the license answer, B stronger on sanctions controls."
+  },
+  "q11": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "A",
+    "reason": "Both cover rules of engagement, evidence, co-sell options, registration program design and comp neutrality; A gives a more concrete, decisive timeline-based ruling for the live dispute plus pattern diagnosis."
+  }
+}

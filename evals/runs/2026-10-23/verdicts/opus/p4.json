@@ -1,0 +1,68 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both correctly explain minimum RPM risk (EU hardcore, Leegin rule of reason, stricter states) and send it to counsel; A gives a fuller, accurate set of safer alternatives (recommended price, maximum price, agency, Colgate, MAP with EU caveat)."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both accurately explain the deemed export rule, ECCN/country analysis, the I-129 certification, exclusions for US persons and the need to hold access under a TCP; each adds useful accurate points (A: ITAR check and remediation if access was granted; B: published/fundamental research exclusions and party screening)."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "tie",
+    "reason": "Both diagnose level vs. range vs. negotiation, check market data and incumbent pay, offer sign-on/equity/re-levelling alternatives, flag equity and posted-range risks, and use a documented exception process; quality is comparable."
+  },
+  "q04": {
+    "A": {"checks": [true, true, false, true], "red_flags": []},
+    "B": {"checks": [true, true, false, true], "red_flags": []},
+    "preference": "B",
+    "reason": "Both weigh incrementality and direct acquisition cost and tie margin to partner work, but neither addresses who owns the customer relationship; B's point that the discount recurs at every renewal (arithmetic checks out at about $49K over three years) and its RPM and due-diligence cautions make it more useful."
+  },
+  "q05": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly aggregate to 60% under the 50 Percent Rule, conclude the entity is blocked, cover blocking and 10-business-day reporting, licensing and counsel, and note control/other regimes; both are accurate and actionable."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both distinguish raw from adjusted gaps, recommend regression with a caution that controlling for level can hide bias, examine hiring and promotion, remediate, and mention privilege; both are accurate and comparably useful."
+  },
+  "q07": {
+    "A": {"checks": [false, false, false, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Answer A is empty; Answer B is accurate and covers every check."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [false, false, false, false], "red_flags": []},
+    "preference": "A",
+    "reason": "A answers the salary question well and meets all checks; B is an off-topic answer about a reseller discount."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give the correct 7 June 2026 transposition date, pre-hire transparency, information rights, correct reporting thresholds and dates, and the 5%/six-month joint pay assessment, with no errors."
+  },
+  "q10": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly explain that hosted SaaS generally isn't an export, that distributed clients with standard TLS are typically 5D992.c mass market or Note 4 excluded with reduced reporting since 2021, and that sanctions and screening still apply; both recommend counsel."
+  },
+  "q11": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "tie",
+    "reason": "Both resolve by registration timestamps and evidence, propose a fair outcome for this deal, set up registration rules with SLAs and expiry, and address comp neutrality; comparable quality."
+  }
+}
