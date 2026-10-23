@@ -1,0 +1,74 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both allocate exactly $3M, tie runway to a $125k/month burn, and project growth correctly (A: 10% MoM gives ~$125k MRR at 12 months, 6.5% gives ~$1.5M ARR at 18; B: ~$220k MRR at 18 months). A is slightly more useful because it adds dilution, default-alive and Plan B guidance and is more careful to bracket every assumption."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both are solid battlecards: they admit where the competitor wins, reframe price as TCO, include trap questions, use placeholder proof points, give walk-away criteria and warn against unprovable claims. A is more rigorous about data and legal risk, while B is more ready for reps to use."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both procedures are accurate and complete: CSL/SDN screening with rescreening, geoblocking of the comprehensively sanctioned regions, a mass-market encryption classification, holds with a named decision-maker, red flags, and 5-year EAR / 10-year OFAC records. A adds current nuances (the affiliates rule, deemed exports), and B adds contract clauses."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both memos correctly treat the customer as blocked under the 50 Percent Rule and stop service. Both forbid refunds, cover the blocked account and the 10-business-day report, weigh a voluntary self-disclosure that halves the base penalty, and call for an investigation, a legal hold and screening fixes. A adds reject and annual reports, and B adds board notification."
+  },
+  "q05": {
+    "A": {"checks": [true, true, false, true, true, true], "red_flags": [false, false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false, false]},
+    "preference": "B",
+    "reason": "Both are accurate, well-timed outlines with honest caveats. B also explains where the violin analogy breaks (observed particles are the massless lowest modes) and labels how certain each claim is, while A uses the guitar analogy without that caveat."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give a clear 'false' verdict, explain 10 versus 11 (M-theory), separate a consistency requirement from a measurement, and cite LHC and short-range gravity null results without overstating them, all within the length limit. A is more precise that M-theory is a conjecture, and B adds useful context on where the claim may have come from."
+  },
+  "q07": {
+    "A": {"checks": [false, false, false, false, false, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Answer A is empty. B is an honest, well-structured update that leads with the miss, hedges the pilots, leaves placeholders for the metrics and makes specific asks."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both drafts lead with the 30% miss, explain causes and changes using placeholders, state that the pilots are not revenue, include cash and runway placeholders, and make specific asks. They are of very similar quality."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A is a complete, careful battlecard. B answers a different question (a partner program for a security SaaS product) and ignores the battlecard request."
+  },
+  "q10": {
+    "A": {"checks": [false, true, true, true, false], "red_flags": [true]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "A is detailed and usable, but it states unsourced figures as fact ('15-30 minutes of post-call work', '20 minutes of admin per call') and its positioning statement has no reason to believe. B's statement includes a placeholder proof element, and B flags every claim that needs validation."
+  },
+  "q11": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": []},
+    "preference": "tie",
+    "reason": "Both define tier requirements and benefits, sourced versus fulfilment margins with deal registration, enablement and MDF rules, comp-neutral rules of engagement, economics and KPIs, and tier movement. A grounds its margins in a direct-versus-partner contribution model, while B is more conventional and complete on security-specific gates and sizing."
+  },
+  "q12": {
+    "A": {"checks": [false, true, true, true, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, false], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both are strong and avoid resale price maintenance (A explicitly warns against it). B sets a first-30-day pipeline and JBP target and covers more Germany-specific items (AVV/TOMs, works council, local events), while A puts its pipeline targets after day 30. Neither assigns owners to its KPIs."
+  }
+}
