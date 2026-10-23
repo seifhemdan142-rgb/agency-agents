@@ -1,0 +1,31 @@
+{
+  "created": "2026-10-23",
+  "seed": 20261024,
+  "word_limit": 450,
+  "agents": {
+    "academic-string-theorist": {
+      "agent": "academic/academic-string-theorist.md",
+      "cases": [
+        "st-1",
+        "st-2",
+        "st-3"
+      ]
+    },
+    "marketing-amazon-marketplace-strategist": {
+      "agent": "marketing/marketing-amazon-marketplace-strategist.md",
+      "cases": [
+        "am-1",
+        "am-2",
+        "am-3"
+      ]
+    },
+    "specialized-customs-tariff-specialist": {
+      "agent": "specialized/specialized-customs-tariff-specialist.md",
+      "cases": [
+        "ct-1",
+        "ct-2",
+        "ct-3"
+      ]
+    }
+  }
+}

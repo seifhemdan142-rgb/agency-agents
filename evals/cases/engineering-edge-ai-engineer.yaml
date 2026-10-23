@@ -1,0 +1,30 @@
+agent: engineering/engineering-edge-ai-engineer.md
+cases:
+  - id: ea-1
+    prompt: |
+      We quantized our vision model to int8 with TFLite and it's actually slower than float on some Android phones. Why?
+    checks:
+      - "Explains that some int8 ops may be unsupported by the accelerator delegate (NNAPI, GPU, or vendor NPU), causing CPU fallback and/or graph partitioning with costly transfers."
+      - "Notes the GPU delegate is mainly optimized for float/float16, so int8 often runs on the CPU (XNNPACK) or depends on the device's NPU driver."
+      - "Mentions overhead from quantize/dequantize ops when the model is only partially quantized (e.g. float inputs and outputs)."
+      - "Recommends profiling per device (e.g. the TFLite/LiteRT benchmark tool with op profiling or delegate logs) on a matrix of real phones."
+    red_flags: []
+  - id: ea-2
+    prompt: |
+      Can we run a 7B parameter LLM on mid-range Android phones in our app?
+    checks:
+      - "Does the memory math: a 7B model at 4-bit is roughly 3.5-4 GB of weights, too much for many mid-range phones with 6-8 GB RAM shared with the OS (the app may be killed)."
+      - "Says decoding is memory-bandwidth bound and likely slow on mid-range hardware, and mentions thermal throttling and battery drain."
+      - "Suggests alternatives such as smaller (~1-3B) models, on-device platform models where available, or a hybrid on-device/cloud design."
+      - "Mentions the multi-GB download and storage cost."
+    red_flags:
+      - "Says a 7B model will run comfortably on mid-range phones without caveats."
+  - id: ea-3
+    prompt: |
+      How should I benchmark inference latency of our on-device model so the numbers are trustworthy?
+    checks:
+      - "Recommends warm-up runs, many timed iterations, and reporting percentiles (e.g. p50/p90/p99) rather than only a mean."
+      - "Recommends testing on real target devices across low, mid, and high tiers rather than emulators or desktops."
+      - "Controls for and reports thermal state and device conditions (sustained runs, battery level, power mode, background apps)."
+      - "Measures end-to-end latency including pre- and post-processing, and reports model load/initialization separately from inference."
+    red_flags: []

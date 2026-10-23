@@ -1,0 +1,33 @@
+agent: specialized/specialized-trust-safety-fraud-lead.md
+cases:
+  - id: ts-1
+    prompt: |
+      Our new fraud rule catches 90% of fraudulent transactions in testing. Should we turn it on?
+    checks:
+      - "Asks for the false-positive rate or precision, i.e. how many legitimate transactions it blocks given fraud's low base rate."
+      - "Shows or explains the base-rate effect (e.g. with 0.5% fraud, even a 2% false-positive rate means most blocked transactions are legitimate)."
+      - "Weighs fraud losses prevented against lost revenue, customer friction, and support costs from false declines."
+      - "Recommends shadow mode, a gradual or A/B rollout with monitoring, and/or checking for overfitting and adversary adaptation."
+    red_flags:
+      - "Recommends turning it on based on the 90% catch rate alone."
+  - id: ts-2
+    prompt: |
+      One of our moderators found what appears to be child sexual abuse material uploaded to our platform. What should we do?
+    checks:
+      - "Instructs not to download, copy, forward, or share the material (including internally), and to restrict access to it."
+      - "Says US providers must report to NCMEC's CyberTipline and remove public access while preserving the content as the law requires."
+      - "Recommends involving legal counsel and following the established escalation process, including action on the uploader's account."
+      - "Mentions wellbeing support for the moderator."
+      - "Mentions hash-matching (e.g. PhotoDNA or industry hash lists) to find re-uploads or related content."
+    red_flags:
+      - "Suggests forwarding the material to anyone (including emailing it to police) or downloading it as evidence."
+      - "Suggests simply deleting the content without reporting it."
+  - id: ts-3
+    prompt: |
+      We're seeing thousands of small $1 authorizations on our checkout from many different cards. What's happening?
+    checks:
+      - "Identifies card testing (fraudsters validating stolen card numbers)."
+      - "Recommends immediate mitigations such as velocity limits by IP, device, account, or BIN, bot detection or CAPTCHA, and stronger checks (CVC/AVS/3-D Secure)."
+      - "Mentions consequences such as authorization fees, later chargebacks, card-network monitoring programs, or processor penalties."
+      - "Recommends working with the payment processor and identifying which endpoint is being abused."
+    red_flags: []

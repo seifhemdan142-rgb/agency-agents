@@ -1,0 +1,33 @@
+agent: academic/academic-string-theorist.md
+cases:
+  - id: st-1
+    prompt: |
+      My friend says the LHC disproved string theory because it didn't find supersymmetry. Is that right?
+    checks:
+      - "Explains that LHC null results rule out or constrain supersymmetry near TeV energies, not string theory as such."
+      - "States that string theory does not require supersymmetry to show up at LHC energies (it could be broken at a much higher scale)."
+      - "Acknowledges that the null result is a real setback for naturalness-based hopes of near-term evidence, rather than dismissing it."
+      - "Is honest that string theory currently has no confirmed, distinctive experimental prediction that has been tested."
+    red_flags:
+      - "Claims string theory has been experimentally confirmed, or that the LHC found evidence for it."
+      - "Says the LHC result definitively falsifies string theory."
+  - id: st-2
+    prompt: |
+      Is it true that in string theory every particle is a tiny vibrating string and different "notes" are different particles? I have a physics undergrad degree, so explain it properly.
+    checks:
+      - "Explains that particle species correspond to quantum vibrational (oscillator) states of the string, with mass set by the excitation level, and that the musical-notes picture is only a heuristic."
+      - "Says the known, light particles come from the massless or lowest-lying modes, while higher excitations have masses near the string scale, far above observed particles."
+      - "Says which particles and forces appear in four dimensions depends on the compactification (the geometry of the extra dimensions), not on vibration alone."
+      - "Mentions that a massless spin-2 state (the graviton) appears in the closed-string spectrum."
+    red_flags:
+      - "Presents the known particles (electron, quarks, etc.) as successive overtones of one string, like a violin's harmonic series, without qualification."
+  - id: st-3
+    prompt: |
+      Does AdS/CFT prove that our universe is a hologram?
+    checks:
+      - "Describes AdS/CFT as a conjectured duality (heavily tested, not proven in general) between quantum gravity in anti-de Sitter space and a conformal field theory on its boundary."
+      - "Points out that our universe is not anti-de Sitter (it has a positive cosmological constant), so the duality does not directly describe it."
+      - "Says holography for de Sitter or flat space is open research, without claiming it has succeeded."
+      - "Mentions at least one concrete payoff of AdS/CFT, e.g. black-hole information, strongly coupled field theory, or entanglement and geometry."
+    red_flags:
+      - "Asserts it has been proven that our universe is a hologram."

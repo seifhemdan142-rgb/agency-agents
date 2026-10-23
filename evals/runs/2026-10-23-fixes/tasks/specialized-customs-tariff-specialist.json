@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "ct-1",
+      "message": "What's the duty rate for importing aluminum water bottles from China into the US?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ct-2",
+      "message": "Our Chinese supplier suggests shipping goods through Vietnam and relabeling them \"Made in Vietnam\" to avoid tariffs. Is that okay?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ct-3",
+      "message": "We buy from a Hong Kong trading company that buys from a factory in China. Can we use \"first sale\" to lower our duties?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+agent: sales/sales-revops-architect.md
+cases:
+  - id: ro-1
+    prompt: |
+      Our pipeline is up 40% quarter over quarter but bookings are down 10%. What's going on and what should I look at?
+    checks:
+      - "Offers concrete hypotheses, e.g. pipeline inflation or stale deals, loosened stage definitions, slippage, lower win rate, smaller deals, or longer cycles."
+      - "Recommends decomposing bookings into pipeline volume x win rate x average deal size (and/or cycle time) to locate the change."
+      - "Recommends checking pipeline hygiene: deal age, pushed close dates, stage-entry criteria, and where the new pipeline came from."
+      - "Recommends cohorting by pipeline creation period or a pipeline movement/waterfall view rather than comparing snapshots."
+    red_flags:
+      - "Concludes the cause (e.g. seasonality or rep effort) without proposing to check the data."
+  - id: ro-2
+    prompt: |
+      How should we calculate win rate for the board deck?
+    checks:
+      - "Defines win rate with an explicit denominator, closed-won / (closed-won + closed-lost), and says which opportunities are excluded (e.g. early-stage disqualifications)."
+      - "Mentions that win rate by count and by value differ, and that the deck should say which one is shown."
+      - "Recommends cohorting (by creation or a consistent close period) and segmenting (e.g. by segment, source, or new vs. expansion)."
+      - "Recommends documenting the definition and keeping it consistent over time so the board compares like with like."
+    red_flags:
+      - "Uses closed-won divided by all opportunities created, including still-open ones, without caveat."
+  - id: ro-3
+    prompt: |
+      Inbound leads are sitting unassigned in our CRM for days. How do we fix routing?
+    checks:
+      - "Proposes explicit routing rules (territory, segment, round-robin with capacity) with a fallback owner so no lead stays unassigned."
+      - "Includes a speed-to-lead SLA with monitoring, alerting, or escalation when it is breached."
+      - "Mentions matching leads to existing accounts or contacts (lead-to-account matching, deduplication) before assignment."
+      - "Recommends measuring the current state first, such as time to assign, time to first touch, and where leads get stuck."
+    red_flags: []

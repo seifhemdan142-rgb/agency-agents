@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "st-1",
+      "message": "My friend says the LHC disproved string theory because it didn't find supersymmetry. Is that right?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "st-2",
+      "message": "Is it true that in string theory every particle is a tiny vibrating string and different \"notes\" are different particles? I have a physics undergrad degree, so explain it properly.\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "st-3",
+      "message": "Does AdS/CFT prove that our universe is a hologram?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

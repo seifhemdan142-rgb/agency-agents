@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "pq-1",
+      "message": "Our CTO wants us to \"switch to post-quantum cryptography\". Where do we even start?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pq-2",
+      "message": "Do we need to replace AES-256 because of quantum computers?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pq-3",
+      "message": "Are the NIST post-quantum standards final, or should we wait?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+agent: sales/sales-partnerships-channel-manager.md
+cases:
+  - id: pc-1
+    prompt: |
+      A reseller wants a 30% discount off list price to sell our SaaS product. Should we agree?
+    checks:
+      - "Evaluates the economics: compares the discount with the reseller's value (incremental pipeline, sales cost saved, services) and with the cost of acquiring the same customers directly."
+      - "Ties margin to what the reseller does (sourcing vs. fulfilment only, first-line support, implementation), e.g. tiered margins higher for partner-sourced deals."
+      - "Addresses renewals: whether the discount applies to renewals and who owns the customer relationship."
+      - "Mentions protecting against channel conflict and price undercutting (deal registration, rules of engagement) and/or performance requirements or a trial period."
+    red_flags: []
+  - id: pc-2
+    prompt: |
+      Our direct sales rep and a partner are both claiming the same deal. How do we handle it?
+    checks:
+      - "Recommends resolving by pre-agreed rules of engagement or deal registration (who registered or sourced it first, with what evidence)."
+      - "Suggests a fair approach for this specific deal, such as reviewing evidence, co-selling, or splitting credit."
+      - "Recommends fixing or setting up the deal registration process going forward (registration windows, approval SLAs, expiry)."
+      - "Mentions compensation design (e.g. comp-neutral or partner-friendly comp for reps) to reduce future conflict."
+    red_flags: []
+  - id: pc-3
+    prompt: |
+      Can we require our resellers to sell our product at no less than list price?
+    checks:
+      - "Flags competition-law risk of minimum resale price maintenance: a hardcore restriction in the EU, and in the US assessed under the rule of reason federally since Leegin (2007) while some states are stricter."
+      - "Suggests safer alternatives such as suggested prices, a unilateral pricing policy (Colgate doctrine), a genuine agency model, or MAP policies on advertised prices."
+      - "Recommends involving counsel before implementing any pricing restriction."
+    red_flags:
+      - "Says requiring minimum resale prices is fine, without legal caveats."

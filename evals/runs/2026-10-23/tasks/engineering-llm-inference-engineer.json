@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "li-1",
+      "message": "We're serving Llama 3.1 8B in FP16 on a single 80 GB H100 with vLLM. Each request has up to 8k tokens of context. Roughly how many concurrent requests can we fit?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "li-2",
+      "message": "Our p99 time-to-first-token is terrible (8 seconds) on our LLM service even though average latency looks fine. Should we just quantize the model to INT4?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "li-3",
+      "message": "Should we self-host an open-weight model or keep paying for an API? We do about 50 million tokens a month.\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

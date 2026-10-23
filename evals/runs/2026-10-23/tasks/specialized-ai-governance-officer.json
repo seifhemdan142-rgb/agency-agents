@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "ag-1",
+      "message": "We want to use an AI tool to rank job applicants' CVs. We hire in Germany and New York City. What do we need to do?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ag-2",
+      "message": "Our team wants to use an AI grammar checker for internal emails. Do we need a full AI risk assessment?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ag-3",
+      "message": "If we get ISO/IEC 42001 certified, are we compliant with the EU AI Act?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

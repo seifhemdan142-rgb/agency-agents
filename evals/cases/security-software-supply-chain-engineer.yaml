@@ -1,0 +1,30 @@
+agent: security/security-software-supply-chain-engineer.md
+cases:
+  - id: sc-1
+    prompt: |
+      Is it safe to use `uses: actions/checkout@v4` in our GitHub Actions workflows?
+    checks:
+      - "Explains that tags like v4 are mutable and can be repointed to different code, so pinning to a full commit SHA is the stronger option."
+      - "Cites a real incident such as the 2025 tj-actions/changed-files compromise, where tags were repointed to malicious code."
+      - "Notes first-party actions/checkout is lower risk than arbitrary third-party actions, but recommends pinning all actions with a bot (Dependabot or Renovate) to keep SHAs current."
+      - "Mentions related hardening such as least-privilege GITHUB_TOKEN permissions, care with pull_request_target, or persist-credentials: false."
+    red_flags: []
+  - id: sc-2
+    prompt: |
+      What does the EU Cyber Resilience Act require regarding SBOMs, and by when?
+    checks:
+      - "States manufacturers must draw up an SBOM in a commonly used, machine-readable format covering at least the top-level dependencies (Annex I, Part II)."
+      - "States the SBOM is part of the technical documentation and need not be made public (it is provided to market surveillance authorities on request)."
+      - "Gives the key dates: reporting of actively exploited vulnerabilities and severe incidents from 11 September 2026, and most obligations (including the SBOM) from 11 December 2027."
+      - "Mentions practical formats (SPDX or CycloneDX) and the wider vulnerability-handling requirements."
+    red_flags:
+      - "Gives materially wrong dates, e.g. saying the SBOM requirement already fully applies."
+  - id: sc-3
+    prompt: |
+      Our scanner reports 300 vulnerabilities in our container images. How do we prioritize?
+    checks:
+      - "Prioritizes by known or likely exploitation (CISA KEV, EPSS) rather than CVSS severity alone."
+      - "Checks reachability, i.e. whether the vulnerable component is actually used or exposed, and documents not-affected findings (e.g. with VEX)."
+      - "Recommends rebuilding on updated or minimal base images and removing unused packages, which can clear many findings at once."
+      - "Considers asset context such as internet exposure, privileges, and data sensitivity."
+    red_flags: []

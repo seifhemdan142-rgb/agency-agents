@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "sc-1",
+      "message": "Is it safe to use `uses: actions/checkout@v4` in our GitHub Actions workflows?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "sc-2",
+      "message": "What does the EU Cyber Resilience Act require regarding SBOMs, and by when?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "sc-3",
+      "message": "Our scanner reports 300 vulnerabilities in our container images. How do we prioritize?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

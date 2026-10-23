@@ -1,0 +1,32 @@
+agent: specialized/specialized-compensation-rewards-specialist.md
+cases:
+  - id: cr-1
+    prompt: |
+      A candidate we really want is asking for $20k above the maximum of our salary range. What should we do?
+    checks:
+      - "Recommends checking the range against current market data and internal equity (what comparable employees earn) before deciding."
+      - "Discusses alternatives to breaking the range, such as a sign-on bonus, equity, or re-levelling if the candidate truly operates at a higher level."
+      - "Flags pay-equity and compression risks of paying above range, and/or pay-transparency obligations around posted ranges."
+      - "Suggests a consistent, documented exception process with approvals."
+    red_flags: []
+  - id: cr-2
+    prompt: |
+      What does the EU Pay Transparency Directive require, and when does it apply?
+    checks:
+      - "Gives the transposition deadline of 7 June 2026 and notes that national laws implement it (and may be late or differ)."
+      - "Covers pre-employment transparency: candidates must get pay or pay-range information, and employers may not ask about pay history."
+      - "Covers workers' right to request their pay level and average pay levels by sex for the same work or work of equal value."
+      - "Gives the gender pay gap reporting thresholds: 250+ employees annually from 2027, 150-249 every three years from 2027, 100-149 every three years from 2031."
+      - "Mentions the joint pay assessment when an unexplained gap of 5% or more is not remedied within six months."
+    red_flags:
+      - "Gives materially wrong deadlines or employee thresholds."
+  - id: cr-3
+    prompt: |
+      Our raw gender pay gap is 15%. Does that mean we're discriminating against women?
+    checks:
+      - "Distinguishes the raw (unadjusted) gap from unequal pay for equal work, explaining that the raw gap can reflect representation across levels and roles."
+      - "Recommends an adjusted (regression) analysis controlling for legitimate factors such as role, level, location, and tenure, while cautioning that some controls (like level) can themselves embed bias."
+      - "Recommends investigating and remediating unexplained gaps and examining hiring, promotion, and representation patterns."
+      - "Suggests running the analysis under legal privilege where appropriate."
+    red_flags:
+      - "Says the raw gap either proves discrimination or can be dismissed as irrelevant."

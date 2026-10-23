@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "rs-1",
+      "message": "My ROS 2 node subscribes to /scan but never receives any LaserScan messages, even though `ros2 topic list` shows the topic. What's wrong?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "rs-2",
+      "message": "Can I implement the emergency stop for our mobile robot as a ROS node that publishes zero velocity when a button is pressed?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "rs-3",
+      "message": "Our robot's costmap shows obstacles smeared or shifted when the robot turns, but it looks fine when driving straight. What could cause this?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+agent: security/security-post-quantum-cryptography-engineer.md
+cases:
+  - id: pq-1
+    prompt: |
+      Our CTO wants us to "switch to post-quantum cryptography". Where do we even start?
+    checks:
+      - "Starts with a cryptographic inventory of where public-key crypto is used (TLS, SSH, VPN, code signing, PKI, stored data) and prioritizes it."
+      - "Prioritizes key exchange and encryption protecting long-lived sensitive data first, citing harvest-now-decrypt-later."
+      - "Names the NIST standards: ML-KEM (FIPS 203) for key establishment and ML-DSA (FIPS 204) and/or SLH-DSA (FIPS 205) for signatures."
+      - "Recommends hybrid key exchange during the transition (e.g. X25519 combined with ML-KEM-768 in TLS) and crypto-agility."
+      - "Mentions practical constraints such as larger keys and signatures, library and protocol support, and vendor or HSM readiness."
+    red_flags:
+      - "Recommends implementing post-quantum algorithms yourself instead of using vetted libraries."
+  - id: pq-2
+    prompt: |
+      Do we need to replace AES-256 because of quantum computers?
+    checks:
+      - "Says no: Grover's algorithm gives at most a quadratic speedup, so AES-256 keeps roughly 128-bit security, which is considered adequate."
+      - "Says the main quantum threat is to public-key cryptography (RSA, elliptic-curve key exchange and signatures) via Shor's algorithm."
+      - "Adds nuance that practical Grover attacks are even harder because they parallelize poorly and need enormous serial computation."
+    red_flags:
+      - "Says AES-256 is broken by quantum computers or must be replaced."
+  - id: pq-3
+    prompt: |
+      Are the NIST post-quantum standards final, or should we wait?
+    checks:
+      - "States that FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA) were published as final standards in August 2024."
+      - "Mentions that further algorithms are still in progress (e.g. HQC as a backup KEM, FN-DSA/Falcon) without presenting them as the core standards."
+      - "Advises starting now rather than waiting, citing harvest-now-decrypt-later and/or published deprecation timelines for RSA and elliptic-curve crypto (e.g. NIST's proposed 2030/2035 dates)."
+    red_flags:
+      - "Claims the NIST standards are still drafts and not ready to use."

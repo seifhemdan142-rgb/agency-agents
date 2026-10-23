@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "fr-1",
+      "message": "We raised $500k on a SAFE with an $8M post-money cap and $1M on a SAFE with a $10M post-money cap. Now we're raising a priced seed. How much of the company will the SAFE holders own?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "fr-2",
+      "message": "We have two term sheets for the same $5M check: $25M pre-money with a 1x participating preferred, or $20M pre-money with a 1x non-participating preferred. Which is better?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "fr-3",
+      "message": "Can I post on LinkedIn that we're raising our seed round and invite investors to reach out?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}
