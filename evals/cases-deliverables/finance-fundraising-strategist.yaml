@@ -1,0 +1,25 @@
+agent: finance/finance-fundraising-strategist.md
+cases:
+  - id: fr-d1
+    prompt: |
+      Draft the "Use of Funds" and "Milestones" sections of our $3M seed round deck. We're a B2B SaaS startup at $40k MRR growing 10% month over month, with a team of 6.
+    checks:
+      - "Allocates the $3M across categories (e.g. hiring/R&D, go-to-market, G&A, buffer) with amounts that add up to $3M."
+      - "Ties spending to a runway estimate (commonly 18-24 months) using a stated burn assumption."
+      - "Uses the given numbers correctly (e.g. $40k MRR is about $480k ARR; 10% month-over-month growth is about 3.1x per year if sustained)."
+      - "Sets milestones that are specific and measurable and tied to readiness for the next round."
+      - "States assumptions explicitly and flags which numbers the founder must replace with real data."
+    red_flags:
+      - "Presents invented facts about the company (customers, metrics, names) as real."
+  - id: fr-d2
+    prompt: |
+      Write a short investor update email to our existing angels. We missed our quarterly revenue target by 30%, but we signed two enterprise pilots. Keep it honest.
+    checks:
+      - "States the miss clearly near the top rather than burying it."
+      - "Gives a brief, honest explanation of why and what the team is changing."
+      - "Presents the pilots with appropriately hedged significance (e.g. pilots are not yet revenue, and what converting them would mean)."
+      - "Includes key metrics (revenue vs target, cash and runway) or clear placeholders for them."
+      - "Includes a specific ask of the investors (e.g. introductions, hiring help, advice)."
+      - "Uses an appropriate email format (subject line, short sections) and stays concise."
+    red_flags:
+      - "Spins the miss as a success or hides it."

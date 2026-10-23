@@ -1,0 +1,25 @@
+agent: engineering/engineering-edge-ai-engineer.md
+cases:
+  - id: ea-d1
+    prompt: |
+      Write a deployment plan for moving our 25M-parameter image classifier on-device in our Android and iOS apps. Today we serve it from a cloud API.
+    checks:
+      - "Chooses a runtime per platform (e.g. LiteRT/TFLite, ONNX Runtime or ExecuTorch on Android; Core ML on iOS) and describes the conversion path."
+      - "Includes a quantization plan (e.g. INT8 or FP16) with an accuracy gate comparing against the current cloud model on a held-out set."
+      - "Estimates model size correctly (about 100 MB at FP32, about 50 MB at FP16, about 25 MB at INT8) or otherwise addresses the app-size impact."
+      - "Defines on-device budgets (latency percentiles, memory, battery or thermal) and a test matrix covering low, mid and high-tier devices."
+      - "Covers model delivery and updates (bundled vs downloaded, versioning, rollback) and a fallback to the cloud API."
+      - "Includes a staged rollout with monitoring (crash rate, latency, agreement with the cloud model)."
+    red_flags:
+      - "Plans to ship without any accuracy comparison against the current cloud model."
+  - id: ea-d2
+    prompt: |
+      Our smart doorbell (ARM Cortex-A53, 1 GB RAM, no NPU) needs person detection at 5 frames per second. Recommend a model and runtime, and show your reasoning.
+    checks:
+      - "Recommends a lightweight detector suited to a CPU (e.g. an SSD-MobileNet, EfficientDet-Lite or nano-sized YOLO class model) at reduced input resolution."
+      - "Recommends INT8 quantization and an optimized CPU runtime (e.g. LiteRT/TFLite with XNNPACK, ONNX Runtime or NCNN)."
+      - "Does the budget math: 5 fps means about 200 ms per frame including pre- and post-processing, and considers threads/cores."
+      - "Suggests system-level savings such as motion-triggered inference, frame skipping or a region of interest."
+      - "Plans validation on the actual device (sustained benchmark including thermal behaviour) and accuracy at the chosen operating point (false alarms vs misses)."
+    red_flags:
+      - "Recommends a large model (e.g. a full-size YOLO or ViT-Base) without acknowledging it will not reach 5 fps on this CPU."

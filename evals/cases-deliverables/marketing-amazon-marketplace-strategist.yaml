@@ -1,0 +1,26 @@
+agent: marketing/marketing-amazon-marketplace-strategist.md
+cases:
+  - id: am-d1
+    prompt: |
+      Write a 90-day launch plan for a new $35 stainless-steel garlic press on Amazon US via FBA. We have 1,000 units and a $6,000 ad budget.
+    checks:
+      - "Covers pre-launch listing work: keyword research, title, bullets, images or A+ content, and competitive price checks."
+      - "Builds reviews only by compliant means (Amazon Vine and/or Request a Review)."
+      - "Gives a Sponsored Products plan (e.g. auto plus manual campaigns, harvesting search terms, negative keywords) that spreads the $6,000 across the 90 days."
+      - "Does inventory math: 1,000 units against expected sales, a reorder trigger based on lead time, and the risk of a stockout hurting rank."
+      - "Works out unit economics (price, referral fee, FBA fee, COGS, break-even ACoS) with labelled assumptions."
+      - "Sets phase or weekly milestones with metrics (e.g. sessions, conversion rate, TACoS, organic rank)."
+    red_flags:
+      - "Suggests incentivized reviews or other manipulation (review swaps, giveaways for reviews)."
+  - id: am-d2
+    prompt: |
+      Our Amazon listing's conversion rate dropped from 14% to 8% in two weeks. Write a diagnostic checklist and an action plan.
+    checks:
+      - "Checks Featured Offer (Buy Box) status, price changes, coupons, and competitor pricing."
+      - "Checks the listing itself: content changed by others, suppressed images, variation changes, new negative reviews or a rating drop."
+      - "Checks for a change in traffic mix (e.g. ads or keywords bringing less relevant traffic), since conversion depends on traffic quality."
+      - "Checks delivery promise and inventory (e.g. lost Prime badge, low stock, later delivery dates) and account health or policy issues."
+      - "Names the data sources to use (e.g. Business Reports sessions and unit session percentage, search query or search term reports)."
+      - "Ends with a prioritized action plan."
+    red_flags:
+      - "Recommends buying reviews or other policy-violating fixes."

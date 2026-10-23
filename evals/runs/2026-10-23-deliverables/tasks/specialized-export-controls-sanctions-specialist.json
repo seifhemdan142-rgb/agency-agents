@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "ec-d1",
+      "message": "Draft a one-page export compliance procedure for our 50-person US SaaS startup that sells worldwide.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "ec-d2",
+      "message": "Write an internal memo. We discovered that one of our customers is a subsidiary 55% owned by a company on the SDN list, and we have been providing them service for 8 months. What do we do now?\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

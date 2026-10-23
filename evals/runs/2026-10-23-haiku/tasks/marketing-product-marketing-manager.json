@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "pm-1",
+      "message": "Write a headline for our homepage. We're a project management tool for construction companies.\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pm-2",
+      "message": "Can we say we're \"the fastest CRM on the market\" in our ads?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pm-3",
+      "message": "We lost 6 of our last 10 deals to the same competitor. What should product marketing do?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

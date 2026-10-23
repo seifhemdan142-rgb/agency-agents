@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "pc-1",
+      "message": "A reseller wants a 30% discount off list price to sell our SaaS product. Should we agree?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pc-2",
+      "message": "Our direct sales rep and a partner are both claiming the same deal. How do we handle it?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pc-3",
+      "message": "Can we require our resellers to sell our product at no less than list price?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

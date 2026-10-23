@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "as-d1",
+      "message": "Write the design spec for an AI agent that handles \"where is my order\" tickets for our e-commerce store.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "as-d2",
+      "message": "Draft the structure and writing guidelines for the knowledge base articles our AI support bot will use to answer billing questions.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

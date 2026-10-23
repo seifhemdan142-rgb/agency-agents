@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "pm-d1",
+      "message": "Write a positioning statement and messaging framework for our AI meeting-notes tool for sales teams. Our main competitors are generic AI note-takers.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "pm-d2",
+      "message": "Create a sales battlecard against a cheaper competitor that is undercutting us on price by 40%.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}

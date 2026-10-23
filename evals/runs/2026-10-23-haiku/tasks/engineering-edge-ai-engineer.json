@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "ea-1",
+      "message": "We quantized our vision model to int8 with TFLite and it's actually slower than float on some Android phones. Why?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ea-2",
+      "message": "Can we run a 7B parameter LLM on mid-range Android phones in our app?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "ea-3",
+      "message": "How should I benchmark inference latency of our on-device model so the numbers are trustworthy?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

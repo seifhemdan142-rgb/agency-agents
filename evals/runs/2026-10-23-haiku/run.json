@@ -1,0 +1,89 @@
+{
+  "created": "2026-10-23",
+  "seed": 20261025,
+  "cases_dir": "evals/cases",
+  "word_limit": 450,
+  "agents": {
+    "academic-string-theorist": {
+      "agent": "academic/academic-string-theorist.md",
+      "cases": [
+        "st-1",
+        "st-2",
+        "st-3"
+      ]
+    },
+    "engineering-edge-ai-engineer": {
+      "agent": "engineering/engineering-edge-ai-engineer.md",
+      "cases": [
+        "ea-1",
+        "ea-2",
+        "ea-3"
+      ]
+    },
+    "finance-fundraising-strategist": {
+      "agent": "finance/finance-fundraising-strategist.md",
+      "cases": [
+        "fr-1",
+        "fr-2",
+        "fr-3"
+      ]
+    },
+    "healthcare-medical-device-software-regulatory": {
+      "agent": "healthcare/healthcare-medical-device-software-regulatory.md",
+      "cases": [
+        "md-1",
+        "md-2",
+        "md-3"
+      ]
+    },
+    "marketing-amazon-marketplace-strategist": {
+      "agent": "marketing/marketing-amazon-marketplace-strategist.md",
+      "cases": [
+        "am-1",
+        "am-2",
+        "am-3"
+      ]
+    },
+    "marketing-product-marketing-manager": {
+      "agent": "marketing/marketing-product-marketing-manager.md",
+      "cases": [
+        "pm-1",
+        "pm-2",
+        "pm-3"
+      ]
+    },
+    "sales-partnerships-channel-manager": {
+      "agent": "sales/sales-partnerships-channel-manager.md",
+      "cases": [
+        "pc-1",
+        "pc-2",
+        "pc-3"
+      ]
+    },
+    "security-llm-red-team-specialist": {
+      "agent": "security/security-llm-red-team-specialist.md",
+      "cases": [
+        "rt-1",
+        "rt-2",
+        "rt-3"
+      ]
+    },
+    "specialized-export-controls-sanctions-specialist": {
+      "agent": "specialized/specialized-export-controls-sanctions-specialist.md",
+      "cases": [
+        "ec-1",
+        "ec-2",
+        "ec-3"
+      ]
+    },
+    "support-ai-support-automation-designer": {
+      "agent": "support/support-ai-support-automation-designer.md",
+      "cases": [
+        "as-1",
+        "as-2",
+        "as-3"
+      ]
+    }
+  },
+  "note": "Answers by the Agent tool's haiku model in Claude Code sub-agents; same 30 questions as the main run for these 10 agents; judged by opus and sonnet."
+}

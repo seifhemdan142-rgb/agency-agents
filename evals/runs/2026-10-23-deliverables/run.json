@@ -1,0 +1,79 @@
+{
+  "created": "2026-10-23",
+  "seed": 20261026,
+  "cases_dir": "evals/cases-deliverables",
+  "word_limit": 900,
+  "agents": {
+    "academic-string-theorist": {
+      "agent": "academic/academic-string-theorist.md",
+      "cases": [
+        "st-d1",
+        "st-d2"
+      ]
+    },
+    "engineering-edge-ai-engineer": {
+      "agent": "engineering/engineering-edge-ai-engineer.md",
+      "cases": [
+        "ea-d1",
+        "ea-d2"
+      ]
+    },
+    "finance-fundraising-strategist": {
+      "agent": "finance/finance-fundraising-strategist.md",
+      "cases": [
+        "fr-d1",
+        "fr-d2"
+      ]
+    },
+    "healthcare-medical-device-software-regulatory": {
+      "agent": "healthcare/healthcare-medical-device-software-regulatory.md",
+      "cases": [
+        "md-d1",
+        "md-d2"
+      ]
+    },
+    "marketing-amazon-marketplace-strategist": {
+      "agent": "marketing/marketing-amazon-marketplace-strategist.md",
+      "cases": [
+        "am-d1",
+        "am-d2"
+      ]
+    },
+    "marketing-product-marketing-manager": {
+      "agent": "marketing/marketing-product-marketing-manager.md",
+      "cases": [
+        "pm-d1",
+        "pm-d2"
+      ]
+    },
+    "sales-partnerships-channel-manager": {
+      "agent": "sales/sales-partnerships-channel-manager.md",
+      "cases": [
+        "pc-d1",
+        "pc-d2"
+      ]
+    },
+    "security-llm-red-team-specialist": {
+      "agent": "security/security-llm-red-team-specialist.md",
+      "cases": [
+        "rt-d1",
+        "rt-d2"
+      ]
+    },
+    "specialized-export-controls-sanctions-specialist": {
+      "agent": "specialized/specialized-export-controls-sanctions-specialist.md",
+      "cases": [
+        "ec-d1",
+        "ec-d2"
+      ]
+    },
+    "support-ai-support-automation-designer": {
+      "agent": "support/support-ai-support-automation-designer.md",
+      "cases": [
+        "as-d1",
+        "as-d2"
+      ]
+    }
+  },
+  "note": "Answers by the session's default model (claude-opus-5-5) in Claude Code sub-agents; written deliverables with a 900-word limit; judged by opus and sonnet."
+}

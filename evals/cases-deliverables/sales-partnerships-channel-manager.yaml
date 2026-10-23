@@ -1,0 +1,24 @@
+agent: sales/sales-partnerships-channel-manager.md
+cases:
+  - id: pc-d1
+    prompt: |
+      Design a three-tier partner program (Registered, Silver, Gold) for our security SaaS product with a $50k average contract value.
+    checks:
+      - "Defines requirements for each tier (e.g. bookings, certifications, sourced deals) and the benefits of each."
+      - "Sets margins or discounts that distinguish partner-sourced deals from influenced or fulfilment-only deals, with deal registration protection."
+      - "Covers enablement: training or certification, sales and technical resources, and rules for any MDF or co-marketing."
+      - "Defines rules of engagement with direct sales for handling channel conflict (e.g. compensation neutrality)."
+      - "Checks the partner economics at a $50k ACV (e.g. services revenue for the partner) and defines program KPIs."
+      - "Describes how partners move between tiers (e.g. an annual review)."
+    red_flags: []
+  - id: pc-d2
+    prompt: |
+      Write a 30-60-90 day plan for onboarding a new reseller in Germany.
+    checks:
+      - "Days 1-30 cover the contract, enablement or certification, deal registration access, account mapping, and a first pipeline target."
+      - "Days 31-60 cover joint selling, co-marketing, first deals, and technical or presales support."
+      - "Days 61-90 cover a review against targets (e.g. a QBR) and adjustments to the plan."
+      - "Includes Germany-specific points, such as GDPR and a data processing agreement, data residency questions, and German-language materials."
+      - "Sets measurable milestones or KPIs with owners."
+    red_flags:
+      - "Requires the reseller to sell at or above a minimum resale price."

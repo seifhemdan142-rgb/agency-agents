@@ -1,0 +1,12 @@
+{
+  "cases": [
+    {
+      "id": "pc-d1",
+      "message": "Design a three-tier partner program (Registered, Silver, Gold) for our security SaaS product with a $50k average contract value.\n\n(Please answer in under 900 words.)"
+    },
+    {
+      "id": "pc-d2",
+      "message": "Write a 30-60-90 day plan for onboarding a new reseller in Germany.\n\n(Please answer in under 900 words.)"
+    }
+  ]
+}
