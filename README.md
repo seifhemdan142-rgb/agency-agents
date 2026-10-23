@@ -182,6 +182,8 @@ Building the future, one commit at a time.
 | 📑 [Universal Document Compiler](engineering/engineering-universal-document-compiler.md) | Schema-agnostic document ASTs, data-shape layout inference, paged publishing | Compiling arbitrary YAML trees into proposals, technical specs, executive dossiers |
 | 📏 [LLM Evaluation Engineer](engineering/engineering-llm-evaluation-engineer.md) | LLM and agent evals, calibrated LLM-as-judge, CI regression gates | Measuring whether a prompt, model, or agent change made quality better or worse |
 | 🚄 [LLM Inference Engineer](engineering/engineering-llm-inference-engineer.md) | Self-hosted LLM serving, KV-cache sizing, batching, quantization, cost per token | Making open-weight models fast and cheap, and deciding self-host vs API |
+| 🔋 [Edge AI Engineer](engineering/engineering-edge-ai-engineer.md) | On-device ML: Core ML, LiteRT, ONNX Runtime, ExecuTorch, quantization, device budgets | Running vision, audio, and small language models on phones, boards, and microcontrollers |
+| 🦾 [Robotics Software Engineer](engineering/engineering-robotics-software-engineer.md) | ROS 2, Nav2, MoveIt 2, ros2_control, tf2, QoS, sim-to-real testing | Building robot software that works outside the lab, with safety kept in safety-rated hardware |
 
 ### 🎨 Design Division
 
@@ -231,6 +233,7 @@ Turning pipeline into revenue through craft, not CRM busywork.
 | 🎯 [Sales Outreach](specialized/sales-outreach.md) | Cold prospecting, multi-touch cadences, objection handling, proposals | Top-of-funnel B2B outreach — from cold email to booked discovery call |
 | 🧲 [Offer & Lead Gen Strategist](sales/sales-offer-lead-gen-strategist.md) | Offers & lead magnets | Top-of-funnel offer construction and lead gen |
 | 🔁 [RevOps Architect](sales/sales-revops-architect.md) | Funnel definitions, metrics dictionary, lead routing, CRM hygiene, forecast cadence | Aligning marketing, sales, and CS on one revenue engine with numbers everyone trusts |
+| 🪢 [Partnerships & Channel Manager](sales/sales-partnerships-channel-manager.md) | Partner programs, resellers, deal registration, cloud marketplaces, partner economics | Building partner-led revenue that beats the direct dollar it replaces |
 
 ### 📢 Marketing Division
 
@@ -274,6 +277,8 @@ Growing your audience, one authentic interaction at a time.
 | 📧 [Email Marketing Strategist](marketing/marketing-email-strategist.md) | Lifecycle email & deliverability | CRM campaigns, automation, segmentation |
 | 📡 [Multi-Platform Publisher](marketing/marketing-multi-platform-publisher.md) | One-click Chinese multi-platform publishing | Routing one article to 知乎/小红书/CSDN/B站/公众号/掘金 |
 | 📣 [PR & Communications Manager](marketing/marketing-pr-communications-manager.md) | PR, media relations & crisis comms | Press releases, thought leadership, reputation |
+| 📯 [Product Marketing Manager](marketing/marketing-product-marketing-manager.md) | Positioning, messaging, launches, battlecards, win/loss, sales enablement | Deciding what you beat and who cares most, then launching and arming sales around it |
+| 🏪 [Amazon Marketplace Strategist](marketing/marketing-amazon-marketplace-strategist.md) | Listings, Sponsored ads, FBA inventory, Featured Offer, account health, unit economics | Growing profitable Amazon sales without policy risk |
 
 ### 📊 Product Division
 
@@ -337,6 +342,7 @@ Defending the stack — from secure-by-design architecture to breach response.
 | 🔑 [Secrets & Credential Hygiene Engineer](security/security-secrets-credential-engineer.md) | Secrets & credential lifecycle | Detection, vaulting, rotation, leak response |
 | 🪤 [LLM Red Team Specialist](security/security-llm-red-team-specialist.md) | Authorized prompt-injection, excessive-agency, and exfiltration testing of LLM apps and agents | Proving what an attacker can make your AI system do or leak, then fixing it |
 | ⚛️ [Post-Quantum Cryptography Engineer](security/security-post-quantum-cryptography-engineer.md) | Crypto inventory, Mosca prioritization, hybrid ML-KEM rollout, crypto-agility | Planning and running the migration off quantum-vulnerable RSA and ECC |
+| 🔏 [Software Supply Chain Security Engineer](security/security-software-supply-chain-engineer.md) | SBOMs, SLSA provenance, Sigstore signing, CI/CD hardening, EU Cyber Resilience Act | Proving what is in every artifact and where it came from, from commit to production |
 
 ### 🛟 Support Division
 
@@ -350,6 +356,7 @@ The backbone of the operation.
 | 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | System reliability, performance optimization | Infrastructure management, system operations, monitoring |
 | ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | Compliance, regulations, legal review | Legal compliance, regulatory requirements, risk management |
 | 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | C-suite communication, strategic summaries | Executive reporting, strategic communication, decision support |
+| 🛎️ [AI Support Automation Designer](support/support-ai-support-automation-designer.md) | AI support agents, safe actions, warm handoffs, verified resolution vs containment | Deploying AI customer support that actually resolves problems and hands off cleanly |
 
 ### 🥽 Spatial Computing Division
 
@@ -430,6 +437,9 @@ The unique specialists who don't fit in a box.
 | 🎧 [Focus Music Architect](specialized/specialized-focus-music-architect.md) | Instrumental focus-music prompt engineering, neuroacoustics | Soundscape architecture, BPM curves, binaural layers for generative audio models |
 | 🚦 [AI Governance Officer](specialized/specialized-ai-governance-officer.md) | EU AI Act, ISO/IEC 42001, NIST AI RMF programs, AI inventory, vendor AI review | Using and shipping AI with proportionate, documented controls |
 | 🛃 [Customs & Tariff Specialist](specialized/specialized-customs-tariff-specialist.md) | HS classification, customs value, origin, tariff scenarios, lawful duty mitigation | Managing tariff exposure and landed cost while trade rules keep changing |
+| 🛂 [Export Controls & Sanctions Specialist](specialized/specialized-export-controls-sanctions-specialist.md) | EAR/ITAR classification, licensing, restricted-party screening, OFAC 50% rule, deemed exports | Deciding what you may ship, release, or sell, to whom, and for what use |
+| 🧯 [Trust, Safety & Fraud Lead](specialized/specialized-trust-safety-fraud-lead.md) | Payment fraud, chargebacks, account takeover, abuse, moderation, DSA and Online Safety Act | Stopping fraud and abuse at a known cost, with policy, enforcement, and appeals people trust |
+| 🪜 [Compensation & Total Rewards Specialist](specialized/specialized-compensation-rewards-specialist.md) | Leveling, salary ranges, equity, merit cycles, pay equity, pay transparency laws | Building fair, explainable pay and preparing for the EU Pay Transparency Directive |
 
 ### 💵 Finance Division
 
@@ -546,6 +556,7 @@ Building AI agents for regulated clinical and sovereign health contexts.
 | 🩺 [Clinical Evidence Agent](healthcare/healthcare-clinical-evidence-agent.md) | Evidence standards, validated vs unvalidated claims, diagnostic authority boundaries | Making clinical claims credibly without overstepping into diagnostic authority |
 | 🌍 [Sovereign Health Systems Agent](healthcare/healthcare-sovereign-health-systems-agent.md) | Government health mandates, UHC policy, emerging market deployment | Health tech teams operating at the intersection of national health infrastructure and sovereign health policy |
 | 🧭 [Healthcare Innovation Strategist](healthcare/healthcare-innovation-strategist.md) | Narrative architecture for healthcare founders across investor, regulatory, sovereign, and clinical audiences | Healthcare founders who need to translate clinical and financial complexity into language that moves capital and builds trust |
+| 🩻 [Medical Device Software Regulatory Specialist](healthcare/healthcare-medical-device-software-regulatory.md) | SaMD qualification, FDA 510(k)/De Novo, EU MDR Rule 11, IEC 62304, PCCPs | Taking health software and AI through device determination, pathway, and lifecycle evidence |
 
 ---
 
