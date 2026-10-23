@@ -6,7 +6,7 @@ cases:
     checks:
       - "Computes 6.25% ($500k / $8M) and 10% ($1M / $10M), i.e. 16.25% combined."
       - "Explains that these percentages apply just before the priced round, and that the new seed money then dilutes the SAFE holders and founders alike."
-      - "Explains that with post-money SAFEs each SAFE's percentage is fixed at conversion, so additional SAFEs (and generally an option-pool top-up in the round) dilute the founders rather than the SAFE holders."
+      - "Explains that with post-money SAFEs each SAFE's percentage is fixed, so issuing additional SAFEs dilutes the founders and other existing holders rather than the earlier SAFE holders."
       - "Shows or offers a worked post-seed example (e.g. if the seed sells 20%, the SAFEs end at 16.25% x 0.8 = 13%)."
     red_flags:
       - "Computes SAFE ownership as if the caps were pre-money valuations."
