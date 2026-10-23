@@ -69,7 +69,12 @@ The judges agreed on 99% of individual checks and on 70% of overall preferences 
   - they still never present a remembered figure as current or use one in a final calculation;
   - they now give well-known typical figures labelled "last-known, verify" instead of withholding them.
 
-The re-test of these three agents is in `../2026-10-23-fixes/`.
+The re-test of these three agents is in `../2026-10-23-fixes/`:
+
+- **Before:** on those 9 cases the judges preferred the baseline 8 times and the persona once.
+- **After:** they preferred the persona 5 times and the baseline never, with the rest ties. The persona side now meets 100% of checks.
+
+These are the same questions that exposed the defects, so the re-test shows the defects are gone, not that the personas improved in general.
 
 ## What to test next
 

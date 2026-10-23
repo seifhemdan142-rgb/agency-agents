@@ -1,0 +1,127 @@
+{
+  "packets": {
+    "f0": {
+      "q01": {
+        "case": "st-2",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "st-1",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 2
+      },
+      "q03": {
+        "case": "st-1",
+        "agent": "academic-string-theorist",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 4,
+        "n_red_flags": 2
+      },
+      "q04": {
+        "case": "st-3",
+        "agent": "academic-string-theorist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "ct-1",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "am-3",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "ct-3",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 0
+      },
+      "q08": {
+        "case": "ct-2",
+        "agent": "specialized-customs-tariff-specialist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 2
+      },
+      "q09": {
+        "case": "am-1",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "am-2",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 3,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "am-2",
+        "agent": "marketing-amazon-marketplace-strategist",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 3,
+        "n_red_flags": 1
+      }
+    }
+  }
+}

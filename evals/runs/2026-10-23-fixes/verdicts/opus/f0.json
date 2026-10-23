@@ -1,0 +1,68 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give accurate, graduate-level accounts: the oscillator spectrum (alpha' m^2 = N - 1), the massless sector holding the observed particles, compactification setting particle identity, and the closed-string graviton. A adds an M-theory caveat and reading pointers. B adds the closed-string mass formula and how fermions arise. Neither has a material error."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false, false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false, false]},
+    "preference": "A",
+    "reason": "Both correctly separate the death of TeV-scale SUSY from string theory and admit the setback. A is more accurate on one point: it notes that non-supersymmetric string theories such as SO(16)xSO(16) exist, while B says string theory needs SUSY at some scale. A also gives a useful scorecard of achievements and possible tests."
+  },
+  "q03": {
+    "A": {"checks": [false, false, false, false], "red_flags": [false, false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false, false]},
+    "preference": "B",
+    "reason": "A is empty. B is accurate, balanced and covers every check."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly call AdS/CFT a well-tested but unproven duality, note our positive cosmological constant, say de Sitter and flat-space holography are open, and name concrete payoffs. A adds eta/s and the dS-vacua dispute. B adds the Holometer null result and a helpful note on what 'hologram' means."
+  },
+  "q05": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both correctly stack the base rate, Section 301, Section 232 and fees, point to the HTS, CBP and a broker, and mention binding rulings. A hedges more carefully: it flags the full-value vs aluminum-content question for 232, puts Section 301 at the 8-digit level, and covers the IEEPA court ruling and refund records. B's worked example is useful, but it asserts more from memory."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both give 15% referral, explain tiers, point to the Revenue Calculator and Fee Preview, list other costs, and work an example with correct arithmetic. A's fee table is more concrete but contains a likely error: the large-standard 2-3 lb fee tops out above $6.38. B hedges each figure and adds a useful break-even ACoS link."
+  },
+  "q07": {
+    "A": {"checks": [true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true], "red_flags": []},
+    "preference": "B",
+    "reason": "Both accurately explain the Nissho Iwai tests, the documents needed, trader resistance over margin, the effect on Section 301 and that origin does not change, with correct savings arithmetic. B adds correct, useful extras: AD/CVD and specific duties need separate analysis, the 2008 attempt to restrict first sale, binding rulings and record retention."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true], "red_flags": [false, false]},
+    "B": {"checks": [true, true, true], "red_flags": [false, false]},
+    "preference": "tie",
+    "reason": "Both refuse clearly, explain substantial transformation, set out accurate penalties (1592, FCA, criminal, seizure; B also EAPA and 18 USC 542), advise a prior disclosure and list lawful alternatives. Their quality is equivalent."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both anchor on break-even ACoS with correct examples, cover TACoS and goal-dependence, and give sound optimization steps. A adds benchmarks and organic-rank context. B adds incrementality and correct bid math."
+  },
+  "q10": {
+    "A": {"checks": [true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly say no, cite Amazon policy and the FTC 2024 rule with its penalties, and give compliant alternatives (Vine, Request a Review, neutral inserts). A has more Vine detail. B gives the FTC effective date and penalty size. Both are accurate."
+  },
+  "q11": {
+    "A": {"checks": [false, false, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "A answers a different question, about transshipment through Vietnam, and does not address Amazon reviews at all. B is a correct, complete answer on incentivized reviews and the compliant alternatives."
+  }
+}

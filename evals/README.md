@@ -12,6 +12,11 @@ persona and without it, and a judge grades both answers blind.
 | `evalkit.py` | Prepares runs, blinds answers into judge packets, scores verdicts, and (optionally) runs everything through the Claude API |
 | `runs/<date>/` | One evaluation run: the tasks, raw answers, judge packets, verdicts, blinding key, `results.jsonl` and `report.md` |
 
+## Results so far
+
+- **[`runs/2026-10-23/FINDINGS.md`](runs/2026-10-23/FINDINGS.md): the 20 agents added in October 2026.** On 60 single-turn questions graded blind by two judges, persona answers and plain answers were statistically indistinguishable. Both met 97–99% of the checks and neither side ever triggered a red flag. The run found three persona defects, which were fixed.
+- **[`runs/2026-10-23-fixes/FINDINGS.md`](runs/2026-10-23-fixes/FINDINGS.md): the re-test of the three fixed personas.** It confirms the defects are gone.
+
 ## How grading works
 
 Each case has:
