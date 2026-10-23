@@ -1,0 +1,74 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, true, true, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both pick a CPU-suited nano detector with int8 and a good runtime, and do the 200 ms budget math. B also plans precision/recall and false alerts per day on real footage, while A validates accuracy only against a float baseline per slice and never addresses false alarms versus misses."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both cover runtimes, cloud-baseline accuracy gates, correct size math (100/50/25 MB), device-tier budgets, delivery with rollback and cloud fallback, and staged rollout with monitoring. A adds a timeline and the data-flywheel risk; B is more rigorous on budgets and gating."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give arithmetic-correct unit economics with labelled assumptions, a $6,000 ad split across three phases, compliant review tactics (Vine, Request a Review) and reorder logic. A is more actionable with its campaign split and inventory curve; B is more careful with placeholders, claims compliance and safety stock."
+  },
+  "q04": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give thorough, accurate checklists covering Featured Offer, price, listing integrity, traffic mix, delivery and data sources, followed by a staged action plan. B adds a correct bid-reset calculation and a check that the drop is real; A adds seasonality and a sessions-versus-orders diagnostic table."
+  },
+  "q05": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, true, true, false, true, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A covers the full checklist, including an explicit threat model, escalation and wrong-answer testing, and logging with PII minimization. B is technically sharp on OWASP and canaries but gives no actors or assets, no human escalation test, and no logging or retention coverage."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both outlines are clause-mapped and correct on Class B applicability (no 5.4.2-5.4.4, 5.5.4 or 5.1.4), and both cover risk, SOUP, configuration, problem resolution, maintenance, traceability and deliverables. A is slightly more complete (also notes 5.3.5 and legacy software); B adds FDA documentation level and AI addenda."
+  },
+  "q07": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, true, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both are accurate on 892.2080 510(k), Rule 11 IIa/IIb, AI Act high-risk status, PCCP and Pre-Sub. A also names De Novo for autonomous or rule-out claims and explicitly rejects the CDS exemption; B never mentions De Novo as a fallback."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A is a complete, well-structured findings section with severity, canary-based reproduction, impact, layered fixes with limits, and retest. B is an unrelated pneumothorax regulatory memo and does not answer the request."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both are complete and competent findings sections. B is slightly stronger: defanged canary reproduction, explicit scope of what held, and each fix layer's limit including that a prompt-only fix is insufficient, whereas A leans partly on prompt-level separation."
+  },
+  "q10": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A is a complete findings section; B is empty."
+  },
+  "q11": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": []},
+    "B": {"checks": [true, true, true, true, true], "red_flags": []},
+    "preference": "A",
+    "reason": "Both meet every check. A is stronger on bot-specific safety: server-side policy engine instead of article arithmetic, retiring expired articles from retrieval, eval gating, answer-to-article traceability and failure tagging. B offers a handy worked example article and starter coverage list."
+  },
+  "q12": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both satisfy all checks with verification before disclosure. A is sharper: sub-intent triage from real tickets, server-side verification, a distinction between containment and verified resolution, launch gates and a holdout rollout. B is more conventional and its sample reply has a wrong weekday for the date."
+  }
+}
