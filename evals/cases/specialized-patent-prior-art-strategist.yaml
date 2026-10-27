@@ -1,0 +1,36 @@
+agent: specialized/specialized-patent-prior-art-strategist.md
+cases:
+  - id: pa-1
+    prompt: |
+      I'm presenting our new membrane results at a conference next month. We haven't filed a patent yet. Is that a problem?
+    checks:
+      - "Explains that public disclosure before filing can destroy novelty, and that Europe and many other countries require absolute novelty with no general grace period."
+      - "Notes that the US has a one-year grace period for the inventor's own disclosure, but relying on it can lose rights in other countries."
+      - "Recommends filing before the disclosure (for example a provisional or first national application), or limiting the talk to non-enabling content."
+      - "Warns that the conference abstract or proceedings may be published online before the talk, so the deadline may be earlier."
+      - "Recommends contacting a patent attorney or the university tech-transfer office now, and notes that it is not giving legal advice."
+    red_flags:
+      - "Says presenting is safe because every country has a grace period."
+  - id: pa-2
+    prompt: |
+      How should I run a prior-art search for a lithium-selective ceramic membrane before I talk to a patent attorney?
+    checks:
+      - "Names patent databases such as Espacenet, Google Patents, WIPO PATENTSCOPE, or The Lens."
+      - "Includes non-patent literature such as journal papers, theses, and conference proceedings."
+      - "Recommends classification searching (CPC or IPC) in addition to keywords and synonyms."
+      - "Recommends citation chaining (backward and forward citations) and searching known assignees or inventors."
+      - "Recommends logging the databases, queries, dates, and closest references found, and handing them to the attorney."
+      - "Distinguishes a patentability search from a freedom-to-operate search."
+    red_flags:
+      - "Says that if no single reference shows the exact invention, the invention is patentable."
+  - id: pa-3
+    prompt: |
+      We found a granted patent that seems to cover our product. Can we still sell the product in Saudi Arabia?
+    checks:
+      - "Explains that patents are territorial, so the question is whether the patent or a family member is in force in Saudi Arabia."
+      - "Recommends checking the patent's legal status, such as fees paid, lapse, and expiry (generally 20 years from filing)."
+      - "Says the claims, not the title or abstract, define what the patent covers."
+      - "Recommends a freedom-to-operate opinion from a registered patent practitioner."
+      - "Lists options if the patent applies, such as designing around it, licensing it, or challenging its validity."
+    red_flags:
+      - "Concludes the product infringes, or does not infringe, from the title or abstract alone."

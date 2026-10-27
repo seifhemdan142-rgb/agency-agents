@@ -1,0 +1,35 @@
+agent: engineering/engineering-thermal-energy-storage-engineer.md
+cases:
+  - id: te-1
+    prompt: |
+      We want to use ice storage to cover a building's afternoon cooling peak. The peak cooling load is 500 tons of refrigeration for 6 hours. Roughly how much ice do we need, and is there anything I should know before we go ahead?
+    checks:
+      - "Converts 500 tons of refrigeration to about 1,760 kW of cooling (1 ton ≈ 3.517 kW) and computes roughly 3,000 ton-hours, or about 10,500 kWh, of cooling for the 6 hours."
+      - "Estimates the ice mass from the latent heat of fusion (about 334 kJ/kg), giving roughly 110–115 tonnes before margins, and adds a margin for ice that is not fully used."
+      - "Notes that making ice lowers the chiller's evaporator temperature and its efficiency (COP), so the project usually saves on peak demand and tariffs rather than on total energy."
+      - "Distinguishes full storage from partial storage (the chiller also runs during the peak) and notes that partial storage needs much less ice."
+      - "Says the result depends on the actual load profile, tariff, and overnight charging window, and asks for metered data or checks the chiller can make the ice in the available hours."
+    red_flags:
+      - "Treats the cooling energy as electricity, for example sizing the ice from kWh of electricity rather than kWh of cooling."
+  - id: te-2
+    prompt: |
+      A supplier says their paraffin phase-change material stores 200 kJ/kg, so their 1,000 kg module stores 55 kWh, and that it charges at 50 kW. Should I believe these numbers?
+    checks:
+      - "Confirms the arithmetic (200 kJ/kg × 1,000 kg ≈ 55.6 kWh) but explains this is the material's latent heat, not the module's usable capacity in the actual temperature window."
+      - "Explains that container, heat exchanger, incomplete melting, and the operating temperature range reduce usable system capacity."
+      - "Questions the 50 kW claim because paraffin's low thermal conductivity (around 0.2 W/m·K) limits heat transfer, and notes that power drops as the melt front moves away from the heat-exchanger surface."
+      - "Asks for test data with conditions: inlet temperature, flow rate, power over time, number of cycles, and who ran the test, plus DSC or melting-range data."
+      - "Mentions a safety or durability point such as paraffin flammability, cycling stability, or material compatibility."
+    red_flags:
+      - "Accepts the 50 kW charging claim without asking about heat-exchanger design or test conditions."
+  - id: te-3
+    prompt: |
+      Our factory needs steam at 400 °C around the clock. We plan to charge storage from solar during the day. Should we store the heat in molten salt or in concrete?
+    checks:
+      - "Notes that the storage must be hotter than 400 °C at the end of discharge to account for heat-exchanger approach temperatures."
+      - "States that common nitrate solar salt is used up to about 565 °C and solidifies around 220–240 °C, so it needs freeze protection such as heat tracing."
+      - "Explains that concrete is cheap per unit of material but has low thermal conductivity, needs a lot of embedded heat-exchanger tubing, and its outlet temperature falls as it discharges."
+      - "Sizes or frames the storage around the overnight period (well over 12 hours of steam demand) and separates capacity from power."
+      - "Recommends comparing options on cost per kWh delivered at or above the needed temperature, including losses, maturity, and the charging route (concentrated solar heat versus electric heaters from PV)."
+    red_flags:
+      - "Ignores that molten salt freezes well above ambient temperature, or suggests it can sit unheated."

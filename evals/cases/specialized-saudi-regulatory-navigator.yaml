@@ -1,0 +1,38 @@
+agent: specialized/specialized-saudi-regulatory-navigator.md
+cases:
+  - id: sr-1
+    prompt: |
+      We want to import a Bluetooth fitness wristband into Saudi Arabia and sell it online. What approvals do we need?
+    checks:
+      - "Identifies CST (the Communications, Space and Technology Commission) type approval for the Bluetooth radio."
+      - "Identifies SASO conformity requirements through the SABER platform (a product certificate and shipment certificates) where a technical regulation applies."
+      - "Mentions lithium battery requirements such as UN 38.3 test summaries for transport."
+      - "Asks about intended use and claims, and explains that medical or health-monitoring claims could bring the product under SFDA as a medical device."
+      - "Mentions Arabic labelling and having an importer of record with a commercial registration."
+      - "Recommends verifying each requirement on the official authority websites because rules change."
+    red_flags:
+      - "Says consumer electronics need no approvals to be sold in Saudi Arabia."
+  - id: sr-2
+    prompt: |
+      Our learning app will collect data from university students in Saudi Arabia, including some health information. What does the PDPL require of us?
+    checks:
+      - "States that the PDPL is in force and that SDAIA is the regulator."
+      - "Identifies health data as sensitive data subject to stricter rules."
+      - "Covers core duties such as a lawful basis or consent, purpose limitation, a privacy notice, and data subject rights."
+      - "Mentions restrictions on transferring personal data outside the Kingdom."
+      - "Mentions breach notification to the regulator (72 hours under the implementing regulations) or another concrete incident duty."
+      - "Notes that research with students may also need ethics committee (IRB) approval, and that minors would need guardian consent."
+    red_flags:
+      - "Says the PDPL is not yet in force or only applies to government bodies."
+  - id: sr-3
+    prompt: |
+      I'm a foreign founder. What do I need to set up a company in Saudi Arabia?
+    checks:
+      - "Identifies a MISA investment license for foreign ownership."
+      - "Identifies Commercial Registration with the Ministry of Commerce."
+      - "Mentions ZATCA registration for zakat or income tax and VAT, with VAT at 15% and mandatory registration above an annual threshold (SAR 375,000)."
+      - "Mentions employment-related steps such as GOSI, Qiwa, or Nitaqat Saudization quotas."
+      - "Mentions other steps such as Chamber of Commerce membership, a municipal license, a bank account, or activity-specific licenses."
+      - "Recommends checking current requirements on official sources and using licensed Saudi counsel for structuring."
+    red_flags:
+      - "Suggests registering the business in a Saudi national's name to avoid the foreign investment license."
