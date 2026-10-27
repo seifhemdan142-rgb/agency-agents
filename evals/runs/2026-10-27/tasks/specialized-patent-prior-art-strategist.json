@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "pa-1",
+      "message": "I'm presenting our new membrane results at a conference next month. We haven't filed a patent yet. Is that a problem?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pa-2",
+      "message": "How should I run a prior-art search for a lithium-selective ceramic membrane before I talk to a patent attorney?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "pa-3",
+      "message": "We found a granted patent that seems to cover our product. Can we still sell the product in Saudi Arabia?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "te-1",
+      "message": "We want to use ice storage to cover a building's afternoon cooling peak. The peak cooling load is 500 tons of refrigeration for 6 hours. Roughly how much ice do we need, and is there anything I should know before we go ahead?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "te-2",
+      "message": "A supplier says their paraffin phase-change material stores 200 kJ/kg, so their 1,000 kg module stores 55 kWh, and that it charges at 50 kW. Should I believe these numbers?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "te-3",
+      "message": "Our factory needs steam at 400 °C around the clock. We plan to charge storage from solar during the day. Should we store the heat in molten salt or in concrete?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}
