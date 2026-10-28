@@ -184,6 +184,7 @@ Building the future, one commit at a time.
 | 🚄 [LLM Inference Engineer](engineering/engineering-llm-inference-engineer.md) | Self-hosted LLM serving, KV-cache sizing, batching, quantization, cost per token | Making open-weight models fast and cheap, and deciding self-host vs API |
 | 🔋 [Edge AI Engineer](engineering/engineering-edge-ai-engineer.md) | On-device ML: Core ML, LiteRT, ONNX Runtime, ExecuTorch, quantization, device budgets | Running vision, audio, and small language models on phones, boards, and microcontrollers |
 | 🦾 [Robotics Software Engineer](engineering/engineering-robotics-software-engineer.md) | ROS 2, Nav2, MoveIt 2, ros2_control, tf2, QoS, sim-to-real testing | Building robot software that works outside the lab, with safety kept in safety-rated hardware |
+| 🌡️ [Thermal Energy Storage Engineer](engineering/engineering-thermal-energy-storage-engineer.md) | Chilled-water, ice, PCM, molten-salt, and solid-media storage sizing and testing | Sizing heat and cold storage from the load profile, checking supplier claims, building the business case |
 
 ### 🎨 Design Division
 
@@ -440,6 +441,9 @@ The unique specialists who don't fit in a box.
 | 🛂 [Export Controls & Sanctions Specialist](specialized/specialized-export-controls-sanctions-specialist.md) | EAR/ITAR classification, licensing, restricted-party screening, OFAC 50% rule, deemed exports | Deciding what you may ship, release, or sell, to whom, and for what use |
 | 🧯 [Trust, Safety & Fraud Lead](specialized/specialized-trust-safety-fraud-lead.md) | Payment fraud, chargebacks, account takeover, abuse, moderation, DSA and Online Safety Act | Stopping fraud and abuse at a known cost, with policy, enforcement, and appeals people trust |
 | 🪜 [Compensation & Total Rewards Specialist](specialized/specialized-compensation-rewards-specialist.md) | Leveling, salary ranges, equity, merit cycles, pay equity, pay transparency laws | Building fair, explainable pay and preparing for the EU Pay Transparency Directive |
+| 📜 [Patent & Prior-Art Strategist](specialized/specialized-patent-prior-art-strategist.md) | Disclosure control, prior-art searches, invention disclosures, filing deadlines | Protecting inventions before talks and pitches, and briefing a patent attorney |
+| 🏛️ [Saudi Regulatory Navigator](specialized/specialized-saudi-regulatory-navigator.md) | MISA, CR, SASO and SABER, CST, SFDA, PDPL, ZATCA, Saudization | Mapping and sequencing the licenses, certificates, and data duties for entering the Saudi market |
+| 🔤 [Arabic Technical Translator](specialized/specialized-arabic-technical-translator.md) | Arabic–English technical, procurement, and contract translation | RFQs, supplier offers, bilingual contracts, and labels, with numbers and terms kept exact |
 
 ### 💵 Finance Division
 
@@ -522,6 +526,7 @@ Scholarly rigor for world-building, storytelling, and narrative design.
 | 🧠 [Psychologist](academic/academic-psychologist.md) | Personality theory, motivation, cognitive patterns | Building psychologically credible characters grounded in research |
 | 📊 [Statistician](academic/academic-statistician.md) | Statistical inference & experiment design | Hypothesis testing, causal inference, sampling, rigorous analysis |
 | 🎻 [String Theorist](academic/academic-string-theorist.md) | Superstring theory, M-theory, holography, quantum gravity | Explaining string theory accurately, separating established results from conjecture and hype, state-of-the-field briefs |
+| 🧪 [Membrane & Materials Scientist](academic/academic-membrane-materials-scientist.md) | Ceramic and ion-selective membranes, lithium extraction from brines, characterization | Designing membrane experiments, reporting selectivity and flux credibly, planning scale-up |
 
 ---
 

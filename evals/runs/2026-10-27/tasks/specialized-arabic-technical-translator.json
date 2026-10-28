@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "at-1",
+      "message": "Translate this RFQ line into Arabic: \"Supply of 120 m of ASTM A106 Gr. B seamless carbon steel pipe, 6\" SCH 40, delivery within 8 weeks DDP Dammam. A 2% bid bond is required.\"\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "at-2",
+      "message": "A Saudi supplier's offer says: \"الأسعار شاملة ضريبة القيمة المضافة\" and \"مدة التوريد ٤٥ يوم عمل من تاريخ استلام أمر الشراء\". Translate these and tell me what to watch out for.\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "at-3",
+      "message": "Our bilingual contract says in English \"liquidated damages are capped at 10% of the contract value\", but the Arabic says \"غرامة التأخير بحد أقصى ١٥٪ من قيمة العقد\". Which one applies?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

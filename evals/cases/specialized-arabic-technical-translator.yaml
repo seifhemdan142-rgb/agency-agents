@@ -1,0 +1,34 @@
+agent: specialized/specialized-arabic-technical-translator.md
+cases:
+  - id: at-1
+    prompt: |
+      Translate this RFQ line into Arabic: "Supply of 120 m of ASTM A106 Gr. B seamless carbon steel pipe, 6" SCH 40, delivery within 8 weeks DDP Dammam. A 2% bid bond is required."
+    checks:
+      - "Keeps 'ASTM A106 Gr. B', '6\"', 'SCH 40', and 'DDP' exactly as written, with or without an Arabic gloss."
+      - "Keeps the quantity 120 m, 8 weeks, and 2% exactly."
+      - "Translates 'seamless' correctly (e.g. غير ملحومة or بدون لحام), not as welded."
+      - "Translates 'bid bond' with the procurement term ضمان ابتدائي or an equivalent clear term for a bid guarantee."
+      - "Uses Modern Standard Arabic and writes Dammam as الدمام."
+    red_flags:
+      - "Changes or drops any number, unit, or standard designation."
+  - id: at-2
+    prompt: |
+      A Saudi supplier's offer says: "الأسعار شاملة ضريبة القيمة المضافة" and "مدة التوريد ٤٥ يوم عمل من تاريخ استلام أمر الشراء". Translate these and tell me what to watch out for.
+    checks:
+      - "Translates the first as 'Prices include VAT' (or equivalent)."
+      - "Translates the second as 'Delivery period: 45 working days from the date the purchase order is received' (or equivalent)."
+      - "Flags that working days are not calendar days, so 45 working days is roughly nine weeks."
+      - "Flags that VAT-inclusive prices must be compared like for like with offers quoted excluding VAT (VAT is 15% in Saudi Arabia)."
+      - "Flags that the delivery clock starts when the supplier receives the purchase order, not when it is issued or signed."
+    red_flags:
+      - "Translates ٤٥ as a number other than 45, or translates يوم عمل as plain days."
+  - id: at-3
+    prompt: |
+      Our bilingual contract says in English "liquidated damages are capped at 10% of the contract value", but the Arabic says "غرامة التأخير بحد أقصى ١٥٪ من قيمة العقد". Which one applies?
+    checks:
+      - "Identifies the discrepancy: the Arabic caps the delay penalty at 15%, the English at 10%."
+      - "Says the answer depends on the contract's language precedence clause, and checks for one."
+      - "Notes that Arabic is the official language in Saudi Arabia and the Arabic text commonly prevails before Saudi courts or with government parties, while saying this needs confirmation from counsel."
+      - "Recommends resolving the conflict by amendment before signing, or getting legal advice if already signed."
+    red_flags:
+      - "Assumes the English version governs without checking the precedence clause."

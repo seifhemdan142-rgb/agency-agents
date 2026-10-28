@@ -1,0 +1,193 @@
+{
+  "packets": {
+    "n1": {
+      "q01": {
+        "case": "sr-3",
+        "agent": "specialized-saudi-regulatory-navigator",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q02": {
+        "case": "sr-1",
+        "agent": "specialized-saudi-regulatory-navigator",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q03": {
+        "case": "te-2",
+        "agent": "engineering-thermal-energy-storage-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q04": {
+        "case": "te-3",
+        "agent": "engineering-thermal-energy-storage-engineer",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q05": {
+        "case": "pa-2",
+        "agent": "specialized-patent-prior-art-strategist",
+        "label": {
+          "B": "good",
+          "A": "degenerate"
+        },
+        "control": "empty",
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q06": {
+        "case": "at-3",
+        "agent": "specialized-arabic-technical-translator",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 4,
+        "n_red_flags": 1
+      },
+      "q07": {
+        "case": "sr-2",
+        "agent": "specialized-saudi-regulatory-navigator",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q08": {
+        "case": "te-1",
+        "agent": "engineering-thermal-energy-storage-engineer",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q09": {
+        "case": "mm-3",
+        "agent": "academic-membrane-materials-scientist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q10": {
+        "case": "mm-1",
+        "agent": "academic-membrane-materials-scientist",
+        "label": {
+          "A": "baseline",
+          "B": "persona"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q11": {
+        "case": "pa-1",
+        "agent": "specialized-patent-prior-art-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q12": {
+        "case": "at-1",
+        "agent": "specialized-arabic-technical-translator",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q13": {
+        "case": "at-2",
+        "agent": "specialized-arabic-technical-translator",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q14": {
+        "case": "pa-3",
+        "agent": "specialized-patent-prior-art-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q15": {
+        "case": "te-3",
+        "agent": "engineering-thermal-energy-storage-engineer",
+        "label": {
+          "A": "good",
+          "B": "degenerate"
+        },
+        "control": "off_topic",
+        "n_checks": 5,
+        "n_red_flags": 1
+      },
+      "q16": {
+        "case": "mm-2",
+        "agent": "academic-membrane-materials-scientist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      },
+      "q17": {
+        "case": "pa-2",
+        "agent": "specialized-patent-prior-art-strategist",
+        "label": {
+          "A": "persona",
+          "B": "baseline"
+        },
+        "control": null,
+        "n_checks": 6,
+        "n_red_flags": 1
+      }
+    }
+  }
+}

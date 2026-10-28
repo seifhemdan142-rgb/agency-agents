@@ -1,0 +1,49 @@
+{
+  "created": "2026-10-27",
+  "seed": 20261027,
+  "cases_dir": "evals/cases",
+  "word_limit": 450,
+  "agents": {
+    "engineering-thermal-energy-storage-engineer": {
+      "agent": "engineering/engineering-thermal-energy-storage-engineer.md",
+      "cases": [
+        "te-1",
+        "te-2",
+        "te-3"
+      ]
+    },
+    "academic-membrane-materials-scientist": {
+      "agent": "academic/academic-membrane-materials-scientist.md",
+      "cases": [
+        "mm-1",
+        "mm-2",
+        "mm-3"
+      ]
+    },
+    "specialized-patent-prior-art-strategist": {
+      "agent": "specialized/specialized-patent-prior-art-strategist.md",
+      "cases": [
+        "pa-1",
+        "pa-2",
+        "pa-3"
+      ]
+    },
+    "specialized-saudi-regulatory-navigator": {
+      "agent": "specialized/specialized-saudi-regulatory-navigator.md",
+      "cases": [
+        "sr-1",
+        "sr-2",
+        "sr-3"
+      ]
+    },
+    "specialized-arabic-technical-translator": {
+      "agent": "specialized/specialized-arabic-technical-translator.md",
+      "cases": [
+        "at-1",
+        "at-2",
+        "at-3"
+      ]
+    }
+  },
+  "note": "Five agents added in PR #9. Answers by the session's default model (claude-opus-5-5) in Claude Code sub-agents; judges: default model (opus) and the Agent tool's sonnet."
+}

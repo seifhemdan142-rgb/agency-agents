@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "mm-1",
+      "message": "Our ceramic membrane gave a Li/Mg separation factor of 50 in a 2-hour test with synthetic seawater. Can we say it is lithium-selective and good enough for lithium extraction from seawater?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "mm-2",
+      "message": "We want to publish the lithium flux of our LLTO membrane. What should we include so that reviewers trust the result?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "mm-3",
+      "message": "Should we keep testing our lithium membrane with synthetic brine, or switch to real reject brine from a seawater desalination plant?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+agent: academic/academic-membrane-materials-scientist.md
+cases:
+  - id: mm-1
+    prompt: |
+      Our ceramic membrane gave a Li/Mg separation factor of 50 in a 2-hour test with synthetic seawater. Can we say it is lithium-selective and good enough for lithium extraction from seawater?
+    checks:
+      - "Defines the separation factor as the Li/Mg ratio in the permeate divided by the Li/Mg ratio in the feed."
+      - "Notes that seawater contains thousands of times more magnesium than lithium (roughly 7,000:1 by mass), so a factor of 50 still leaves magnesium dominant in the permeate, around 140 times more Mg than Li."
+      - "Says the membrane is selective but not yet good enough to claim a product on its own, and that further purification or higher selectivity would be needed."
+      - "Asks for replicates on independent membranes, a closed mass balance, and leak or seal controls."
+      - "Says 2 hours in synthetic brine says little about stability, fouling, or scaling, and recommends longer tests and real brine."
+    red_flags:
+      - "Concludes the membrane can produce battery-grade lithium directly from seawater based on this result."
+  - id: mm-2
+    prompt: |
+      We want to publish the lithium flux of our LLTO membrane. What should we include so that reviewers trust the result?
+    checks:
+      - "Asks for the full feed and permeate compositions, including competing ions, with pH, temperature, and the driving force (concentration, voltage, or current)."
+      - "Asks for flux with units (e.g. mol m⁻² h⁻¹), membrane area, thickness, and test duration."
+      - "Requires results from several independent membranes with error bars, not one best run."
+      - "Requires a mass balance and leak, seal, or pinhole controls."
+      - "Mentions current efficiency and energy per kg of lithium if the process is electrically driven, and stability data with post-test characterization (e.g. XRD or SEM)."
+      - "Mentions describing the analytical method (e.g. ICP with matrix-matched calibration) and making raw data available."
+    red_flags:
+      - "Recommends reporting only the best-performing membrane or run."
+  - id: mm-3
+    prompt: |
+      Should we keep testing our lithium membrane with synthetic brine, or switch to real reject brine from a seawater desalination plant?
+    checks:
+      - "Recommends both: synthetic brine for controlled mechanism studies and real brine before any claim about applicability."
+      - "Explains that reject brine is more concentrated than seawater (roughly 1.5–2 times for typical reverse-osmosis recoveries)."
+      - "Names real-brine factors absent from synthetic brine, such as calcium and sulfate scaling, silica, organics, antiscalants, and suspended solids."
+      - "Recommends fully characterizing the real brine and controlling sampling and storage (chain of custody, consistent batches)."
+      - "Mentions pretreatment needs or longer-duration fouling and stability testing."
+    red_flags:
+      - "Says results in synthetic brine will transfer directly to real brine without testing."

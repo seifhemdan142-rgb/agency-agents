@@ -1,0 +1,104 @@
+{
+  "q01": {
+    "A": {"checks": [true, true, false, true, true, false], "red_flags": [false]},
+    "B": {"checks": [true, true, false, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both cover the main steps accurately, but B explicitly defers structuring to licensed Saudi counsel, tells the user to verify on official sources, and warns against nominee arrangements; A gives no VAT rate and no verify-on-official-sources advice."
+  },
+  "q02": {
+    "A": {"checks": [true, true, true, false, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Both are accurate and complete on CST, SABER and SFDA, but B asks about the band's claims, names the UN 38.3 battery transport file, and urges verification; A only states the SFDA condition and mentions lithium-battery shipping rules generically."
+  },
+  "q03": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both confirm the 55.6 kWh arithmetic, explain why usable capacity is lower, challenge the 50 kW with paraffin conductivity and the melt front, and ask for conditioned test data and safety points."
+  },
+  "q04": {
+    "A": {"checks": [false, true, true, true, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, false], "red_flags": [false]},
+    "preference": "B",
+    "reason": "B explicitly states the storage must stay above 400 C with approach temperature through end of discharge and gives checked sizing for salt and concrete; A misses the approach-temperature point. Neither frames a cost-per-delivered-kWh comparison."
+  },
+  "q05": {
+    "A": {"checks": [false, false, false, false, false, false], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "Answer A is empty; B gives a complete, accurate prior-art search workflow including databases, NPL, CPC codes, citation chaining, logging and the FTO distinction."
+  },
+  "q06": {
+    "A": {"checks": [true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both spot the 10% versus 15% and scope mismatch, point to the precedence clause, note Arabic usually prevails in Saudi courts and government contracts, and recommend an aligning amendment and counsel."
+  },
+  "q07": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both cover PDPL duties accurately, but A also raises IRB/bioethics approval for research with students alongside guardian consent, and flags controller/processor and verification; B omits the ethics approval."
+  },
+  "q08": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "Both size about 113-114 t of ice correctly and cover chiller derating, full versus partial storage and tariffs; A also gives the 3.517 kW/ton and 1,760 kW conversion that B omits."
+  },
+  "q09": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both recommend keeping synthetic brine for mechanism work and adding real reject brine, explain the 1.5-2x concentration and real-brine foulants, and give characterization, sampling, pretreatment and long-duration test advice."
+  },
+  "q10": {
+    "A": {"checks": [false, true, true, false, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "B",
+    "reason": "B defines the separation factor, computes the 7,000:1 and 140:1 mass figures correctly, and asks for replicates, seal blank, reference disc and mass balance; A is correct on the molar picture but never defines alpha or asks for leak/seal controls."
+  },
+  "q11": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both correctly explain absolute novelty versus the US grace period, warn about early online abstracts, recommend a provisional or non-enabling talk, and advise contacting counsel or tech transfer now."
+  },
+  "q12": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [false, true, true, true, true], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A keeps the technical tokens (Gr. B, 6 inch mark, SCH 40, DDP) exactly as written and flags the right ambiguities; B rewrites Gr. B and 6\" into Arabic words and adds 'linear' and 'nominal diameter', though its translation is otherwise sound."
+  },
+  "q13": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both translate correctly, keep 45, explain working days versus calendar days (about 63 days), VAT normalization at 15%, and that the clock starts on supplier receipt of the PO."
+  },
+  "q14": {
+    "A": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both stress territoriality, status and term, claims over abstract, supply-chain exposure, counsel-led FTO analysis and the standard options; neither concludes infringement from the abstract."
+  },
+  "q15": {
+    "A": {"checks": [false, true, true, true, false], "red_flags": [false]},
+    "B": {"checks": [false, false, false, false, false], "red_flags": [false]},
+    "preference": "A",
+    "reason": "A answers the molten salt versus concrete question sensibly; B is an unrelated answer about reporting LLTO membrane flux and does not address the steam storage question at all."
+  },
+  "q16": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both list the key reviewer-trust elements: full compositions and conditions, flux units and area, independent replicates, mass balance and leak controls, current efficiency, stability and post-test characterization, and analytical rigor with raw data."
+  },
+  "q17": {
+    "A": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "B": {"checks": [true, true, true, true, true, true], "red_flags": [false]},
+    "preference": "tie",
+    "reason": "Both give a sound structured prior-art workflow with databases, NPL, CPC codes, citation chaining, logging, the patentability versus FTO distinction, and warn that no exact match does not mean patentable or complete."
+  }
+}

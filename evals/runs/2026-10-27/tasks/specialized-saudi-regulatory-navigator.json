@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "id": "sr-1",
+      "message": "We want to import a Bluetooth fitness wristband into Saudi Arabia and sell it online. What approvals do we need?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "sr-2",
+      "message": "Our learning app will collect data from university students in Saudi Arabia, including some health information. What does the PDPL require of us?\n\n(Please answer in under 450 words.)"
+    },
+    {
+      "id": "sr-3",
+      "message": "I'm a foreign founder. What do I need to set up a company in Saudi Arabia?\n\n(Please answer in under 450 words.)"
+    }
+  ]
+}

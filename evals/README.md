@@ -18,6 +18,7 @@ persona and without it, and a judge grades both answers blind.
 - **[`runs/2026-10-23-fixes/FINDINGS.md`](runs/2026-10-23-fixes/FINDINGS.md): the re-test of the three fixed personas.** It confirms the defects are gone.
 - **[`runs/2026-10-23-haiku/FINDINGS.md`](runs/2026-10-23-haiku/FINDINGS.md): the same questions answered by a smaller model, for 10 agents.** There is still no pooled difference. Per-agent effects are larger, with some personas helping and others hurting.
 - **[`runs/2026-10-23-deliverables/FINDINGS.md`](runs/2026-10-23-deliverables/FINDINGS.md): 20 longer written deliverables.** Both judges lean toward the persona answers (6–4 and 9–2), though not significantly at this size. The only red flag was in a baseline answer.
+- **[`runs/2026-10-27/FINDINGS.md`](runs/2026-10-27/FINDINGS.md): the five agents added later in October 2026.** Both judges preferred the persona answers (6–2 and 7–0), and persona answers met 10 points more of the checks. The same author wrote these personas and their checklists, so read the caveats before relying on it.
 
 ## How grading works
 
